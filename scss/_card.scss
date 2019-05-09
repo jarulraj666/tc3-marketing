@@ -1,0 +1,27 @@
+// Card component
+
+.card {
+  padding: 31px 40px 40px;
+}
+
+.card-body {
+  margin: 10px 0 30px;
+}
+
+.card-turquoise-theme {
+  color: $tc-white;
+  background-image: linear-gradient(
+    151.47deg,
+    $tc-turquoise 0%,
+    $tc-turquoise-dark1 100%
+  );
+}
+
+.card-teal-theme {
+  color: $tc-white;
+  background-image: linear-gradient(
+    151.47deg,
+    $tc-teal 0%,
+    $tc-teal-dark1 100%
+  );
+}

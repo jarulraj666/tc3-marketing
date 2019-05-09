@@ -1,0 +1,54 @@
+// Hero blocks: hero video block, etc.
+
+.hero-video-block {
+  padding-top: 40px;
+
+  .video {
+    position: relative;
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-image: url('../img//hero-video-mask.svg');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 0.5;
+    }
+
+    .ic {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      -moz-transform: translateX(-50%) translateY(-50%);
+
+      opacity: 0;
+      cursor: pointer;
+    }
+  }
+
+  .title {
+    padding-top: 35px;
+    letter-spacing: 0.5px;
+  }
+
+  .svg-masked {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scale(0);
+    transition: transform 8s;
+
+
+    &.zoom {
+      transform: scale(1.125);
+    }
+  }
+}

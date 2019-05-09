@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="674px" height="377px" viewBox="0 0 674 377" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 53.2 (72643) - https://sketchapp.com -->
+    <title>FA44D619-24C7-4FE1-8E72-208B1F198B8B</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="56.5517867%" y1="34.3741681%" x2="49.0003118%" y2="60.2826622%" id="linearGradient-1">
+            <stop stop-color="#FFC43D" offset="0%"></stop>
+            <stop stop-color="#EF476F" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Additional-Assets-For-Dev" transform="translate(-18.000000, -32.000000)" fill="url(#linearGradient-1)">
+            <g id="Developers" transform="translate(18.000000, 32.000000)">
+                <path d="M18.1827521,178 C60.1827521,113.10174 46.1827521,113.10174 57.1827521,75 C74.984089,13.339827 81.1827521,10 117.931137,1 C154.679521,-8 159.182752,46.05 195.182752,84.7554948 C233.095283,125.517252 303.633671,94.1626462 359.182752,103 C447.182752,117 560.510946,91 615.182752,128 C672.858528,167.032983 689.182752,236 659.182752,296 C621.281797,371.80191 486.182752,348 391.182752,360 C271.268006,375.147126 162.645168,395.022236 67.885121,343.394997 C-4.87355793,303.75456 -15.1844745,229.558928 18.1827521,178 Z" id="Rectangle-Copy-5"></path>
+            </g>
+        </g>
+    </g>
+</svg>

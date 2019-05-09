@@ -1,0 +1,238 @@
+From 99070e246ab6295de1588a7f5054fa1794a53c64 Mon Sep 17 00:00:00 2001
+From: Muhamad Fikri Alhawarizmi <mfikria@gmail.com>
+Date: Thu, 25 Apr 2019 10:34:57 +0700
+Subject: [PATCH] implement
+
+---
+ css/styles.css | 20 ++++++++++----------
+ index.html     | 26 +++++++++++++++++++++-----
+ js/tab.js      | 47 ++++++++++++++++++++++++++++++++++++++++++-----
+ scss/_tab.scss | 29 +++++++++++------------------
+ 4 files changed, 84 insertions(+), 38 deletions(-)
+
+diff --git a/css/styles.css b/css/styles.css
+index 7da90de..8e1c751 100644
+--- a/css/styles.css
++++ b/css/styles.css
+@@ -665,21 +665,15 @@ img.full {
+   margin-top: -88px;
+   margin-left: 50px; }
+   .tab-item-containers .tab-item-container {
++    opacity: 0;
+     display: none;
+-    padding: 145px 70px 110px;
++    padding: 180px 70px 110px;
+     color: #FFF;
+     background-size: contain;
+     background-repeat: no-repeat; }
+-    .tab-item-containers .tab-item-container:nth-child(4n + 1) {
+-      background-image: url(../img/morph/tab-content-oval-0.svg); }
+-    .tab-item-containers .tab-item-container:nth-child(4n + 2) {
+-      background-image: url(../img/morph/tab-content-oval-1.svg); }
+-    .tab-item-containers .tab-item-container:nth-child(4n + 3) {
+-      background-image: url(../img/morph/tab-content-oval-2.svg); }
+-    .tab-item-containers .tab-item-container:nth-child(4n) {
+-      background-image: url(../img/morph/tab-content-oval-3.svg); }
+     .tab-item-containers .tab-item-container.active {
+-      display: block; }
++      display: block;
++      opacity: 1; }
+     .tab-item-containers .tab-item-container .tab-item-title {
+       margin-bottom: 10px; }
+   .tab-item-containers .tab-item-title {
+@@ -702,6 +696,12 @@ img.full {
+     .tab-item-headers .tab-item-header.last {
+       margin-right: -41px; } }
+ 
++.tab-background {
++  position: absolute;
++  left: 30px;
++  bottom: 10px;
++  z-index: -1; }
++
+ .home-top-wrapper {
+   padding-left: 108px; }
+   .home-top-wrapper .section {
+diff --git a/index.html b/index.html
+index e2ff8be..15d08d3 100644
+--- a/index.html
++++ b/index.html
+@@ -14,6 +14,7 @@
+   <!-- D3 library and flubber library to implement morph -->
+   <script src="https://d3js.org/d3.v4.min.js"></script>
+   <script src="https://unpkg.com/flubber@0.3.0"></script>
++  <script src="https://unpkg.com/animejs@2.2.0/anime.min.js"></script>
+ 
+   <!-- AOS library for scrolling animation-->
+   <script src="js/aos.js"></script>
+@@ -161,6 +162,21 @@
+             <h2 class="title uppercase">Our Talent, Your Success</h2>
+             <h5 class="subtitle">Outsource your work to our community for the best results</h5>
+             <div class="tab margin-top-l">
++              <div id="tab-background" class="tab-background">
++                <svg width="690px" height="383px" viewBox="0 0 680 383" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
++                  <defs>
++                    <linearGradient x1="56.5517867%" y1="34.3741681%" x2="49.0003118%" y2="60.2826622%" id="tab-background-linier-gradient">
++                      <stop stop-color="#FFC43D" offset="0%"></stop>
++                      <stop stop-color="#EF476F" offset="100%"></stop>
++                    </linearGradient>
++                  </defs>
++                  <g stroke="none" fill="none" fill-rule="evenodd">
++                    <g fill="url(#tab-background-linier-gradient)">
++                      <path d="M18.2,178c42-64.9,28-64.9,39-103C75,13.3,81.2,10,117.9,1s41.3,45,77.3,83.8c37.9,40.7,108.4,9.4,164,18.2,88,14,201.3-12,256,25,57.7,39,74,108,44,168-37.9,75.8-173,52-268,64-119.9,15.1-228.6,35-323.3-16.6C-4.9,303.8-15.2,229.6,18.2,178Z" id="tab-background-svg"></path>
++                    </g>
++                  </g>
++                </svg>
++              </div>
+               <div class="tab-item-headers">
+                 <div class="tab-item-header active first" data-tab-index="1">
+                   <i class="ic ic-m ic-development-white"></i>
+@@ -176,23 +192,23 @@
+                 </div>
+               </div>
+               <div class="tab-item-containers">
+-                <div class="tab-item-container active">
++                <div id="tab-item-container-1" class="tab-item-container active">
+                   <h5 class="tab-item-title">World Class Developers</h5>
+                   <div class="tab-item-description">Consistent, reliable, knowledgeable, and fast. That’s the Topcoder development community. Find
+                     talent at the forefront of tech to offset your team and get digital work done faster.</div>
+                 </div>
+-                <div class="tab-item-container">
++                <div id="tab-item-container-2" class="tab-item-container">
+                   <h5 class="tab-item-title">Great Designers</h5>
+                   <div class="tab-item-description">Industry-leading designers, at your fingertips. Access an incredible breadth of creative
+                     perspectives and design expertise to find the best creative solution for your project.</div>
+                 </div>
+-                <div class="tab-item-container">
++                <div id="tab-item-container-3" class="tab-item-container">
+                   <h5 class="tab-item-title">Data Science Geniuses</h5>
+                   <div class="tab-item-description">We’re not exaggerating. Tap the largest, most diverse Data Science pool of any crowdsourcing
+                     platform. This is how Topcoder was born: competitive programming for fun (and bragging rights).
+                   </div>
+                 </div>
+-                <div class="tab-item-container">
++                <div id="tab-item-container-4" class="tab-item-container">
+                   <h5 class="tab-item-title">QA & Testing Talent</h5>
+                   <div class="tab-item-description">Meticulous QA and testing from a diverse pool of talent. Get QA and Testing done quickly for
+                     complex scenarios, then speed your dev  process and launch.</div>
+@@ -452,4 +468,4 @@
+   </div>
+ </body>
+ 
+-</html>
+\ No newline at end of file
++</html>
+diff --git a/js/tab.js b/js/tab.js
+index 503b606..5e90ea0 100644
+--- a/js/tab.js
++++ b/js/tab.js
+@@ -1,10 +1,47 @@
++var shapes = [
++  'M18.2,178c42-64.9,28-64.9,39-103C75,13.3,81.2,10,117.9,1s41.3,45,77.3,83.8c37.9,40.7,108.4,9.4,164,18.2,88,14,201.3-12,256,25,57.7,39,74,108,44,168-37.9,75.8-173,52-268,64-119.9,15.1-228.6,35-323.3-16.6C-4.9,303.8-15.2,229.6,18.2,178Z',
++  'M22.9,151.5C68.7,90,146.8,118.9,174.5,83,217,28,204,0,260,0s61.1,58.6,107,90c52.1,35.7,80,12.6,129,25,42.2,10.7,85-14,121,13,54.1,40.6,75,106.9,54,167-27,77.3-204.4,25.4-291.3,47.4-112.1,28.4-221.2,51.6-316,0C-9.1,302.8-14.8,202.2,22.9,151.5Z',
++  'M14.2,182c15-47,81.7-71.9,148-67,123,9,200,3.1,197-33-5-59,10.3-73,46.1-80s71.9,16,71.9,51c0,16.4,8,37,30,47s20.6,2.1,76,9c40,5,55.2,12.4,72,59,14.7,41,30,72,0,132-37.9,75.8-173,52-268,64-119.9,15.1-228.6,35-323.3-16.6C-8.9,307.8-8.8,254.1,14.2,182Z',
++  'M34.2,154c29-42,209-51.1,275-45,108.2,10,178,20,190-21,17.6-60.2,18.1-80,68.1-87s53.9,28.2,53.9,63.2c0,16.4-7,25.8,0,50.8s23.6,19.8,34,67c11,50,23,58-7,118-37.9,75.8-173,52-268,64-119.9,15.1-228.6,35-323.3-16.6C-15.9,307.8-12.8,222.1,34.2,154Z'
++]
++
++var offset = [
++  '30px',
++  '25px',
++  '5px',
++  '-5px',
++]
++
+ jQuery(document).ready(function() {
++  var path = d3.select("#tab-background-svg");
++
+   jQuery('.tab .tab-item-header').on('click', function() {
+     var tab = jQuery(this).parents('.tab');
+-    tab.find('.active').removeClass('active');
++    var prevTab = tab.find('.active')
++    prevTab.removeClass('active');
++
++    var prevIndex = jQuery(prevTab).data('tab-index')
++    var nextIndex = jQuery(this).data('tab-index');
+ 
+-    var index = jQuery(this).data('tab-index');
+-    tab.find('.tab-item-headers .tab-item-header:nth-child(' + index + ')').addClass('active');
+-    tab.find('.tab-item-containers .tab-item-container:nth-child(' + index + ')').addClass('active');
++    tab.find('.tab-item-headers .tab-item-header:nth-child(' + nextIndex + ')').addClass('active');
++    var nextContainer = tab.find('.tab-item-containers .tab-item-container:nth-child(' + nextIndex + ')')
++    nextContainer.addClass('active');
++    var interpolator = flubber.interpolate(shapes[prevIndex - 1], shapes[nextIndex - 1], { maxSegmentLength: 5 });
++    anime({
++      targets: '#tab-background',
++      left: [offset[prevIndex - 1], offset[nextIndex - 1]],
++      duration: 1500,
++      easing: 'easeInOutQuad',
++    });
++    anime({
++      targets: '#tab-item-container-' + nextIndex,
++      opacity: [0, 1],
++      duration: 1000,
++      easing: 'easeInOutQuad',
++    });
++    path
++      .transition()
++      .duration(1500)
++      .attrTween("d", function() { return interpolator; })
+   });
+-});
+\ No newline at end of file
++});
+diff --git a/scss/_tab.scss b/scss/_tab.scss
+index d206e79..23a1932 100644
+--- a/scss/_tab.scss
++++ b/scss/_tab.scss
+@@ -62,31 +62,17 @@
+   margin-left: 50px;
+ 
+   .tab-item-container {
++    opacity: 0;
+     display: none;
+-    padding: 145px 70px 110px;
++    padding: 180px 70px 110px;
+     color: $tc-white;
+ 
+     background-size: contain;
+     background-repeat: no-repeat;
+ 
+-    &:nth-child(4n + 1) {
+-      background-image: url(../img/morph/tab-content-oval-0.svg);
+-    }
+-    
+-    &:nth-child(4n + 2) {
+-      background-image: url(../img/morph/tab-content-oval-1.svg);
+-    }
+-
+-    &:nth-child(4n + 3) {
+-      background-image: url(../img/morph/tab-content-oval-2.svg);
+-    }
+-
+-    &:nth-child(4n) {
+-      background-image: url(../img/morph/tab-content-oval-3.svg);
+-    }
+-
+     &.active {
+       display: block;
++      opacity: 1;
+     }
+ 
+     .tab-item-title {
+@@ -128,4 +114,11 @@
+       }
+     }
+   }
+-}
+\ No newline at end of file
++}
++
++.tab-background {
++  position: absolute;
++  left: 30px;
++  bottom: 10px;
++  z-index: -1;
++}
+-- 
+2.17.2 (Apple Git-113)
+

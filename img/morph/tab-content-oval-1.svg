@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="680px" height="373px" viewBox="0 0 680 373" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 53.2 (72643) - https://sketchapp.com -->
+    <title>D7E72EF1-326C-44AF-9657-8140CB4FEF9C</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="56.5517867%" y1="34.9129253%" x2="49.0003118%" y2="59.9281302%" id="linearGradient-1">
+            <stop stop-color="#FFC43D" offset="0%"></stop>
+            <stop stop-color="#EF476F" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage-V2" transform="translate(-592.000000, -1538.000000)" fill="url(#linearGradient-1)">
+            <path d="M614.85094,1689.54171 C660.650637,1627.95276 738.772463,1656.88269 766.5,1621 C809,1566 796,1538 852,1538 C908,1538 913.143124,1596.57928 959,1628 C1011.09866,1663.69753 1039,1640.57864 1088,1653 C1130.19984,1663.69753 1173,1639 1209,1666 C1263.09161,1706.56871 1283.99664,1772.93209 1263,1833 C1235.98927,1910.27324 1058.63783,1858.3701 971.651759,1880.395 C859.647473,1908.75452 750.462416,1932.02224 655.702369,1880.395 C582.94369,1840.75456 577.198126,1740.17517 614.85094,1689.54171 Z" id="Rectangle"></path>
+        </g>
+    </g>
+</svg>

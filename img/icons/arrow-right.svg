@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="14px" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 53.2 (72643) - https://sketchapp.com -->
+    <title>1B19CDF3-50F7-44CD-937C-C0AD75B4DA09@2x</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M10.004354,1.00435404 C9.61535005,0.615350045 8.98929462,0.610705376 8.59179704,1.00820296 L8.60820296,0.991797042 C8.21707326,1.38292674 8.22319888,2.02319888 8.61005754,2.41005754 L12.2,6 L0.998377204,6 C0.4469887,6 0,6.44386482 0,7 L0,7 C0,7.55228475 0.448673275,8 0.998377204,8 L12.2,8 L8.61005754,11.5899425 C8.21790359,11.9820964 8.21070538,12.6107054 8.60820296,13.008203 L8.59179704,12.991797 C8.98292674,13.3829267 9.62315493,13.3768451 10.004354,12.995646 L15.295646,7.70435404 C15.68465,7.31535005 15.6768451,6.67684507 15.295646,6.29564596 L10.004354,1.00435404 Z" id="path-1"></path>
+    </defs>
+    <g id="Solutions" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Solutions---Apps-V3" transform="translate(-1096.000000, -2252.000000)">
+            <g id="Stacked-Group-4" transform="translate(945.000000, 2250.000000)">
+                <g id="icons/arrow/right" transform="translate(151.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="icon-color" fill="#06D6A0" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

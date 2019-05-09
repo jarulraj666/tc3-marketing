@@ -1,0 +1,105 @@
+.ic {
+  display: inline-block;
+  vertical-align: middle;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  // default size
+  width: 24px;
+  height: 24px;
+
+  &.ic-m {
+    width: 40px;
+    height: 40px;
+  }
+
+  &.ic-l {
+    width: 46px;
+    height: 46px;
+  }
+}
+
+.ic-play {
+  background-image: url("../img/icons/play.svg");
+}
+
+.ic-play-white {
+  background-image: url("../img/icons/play-white.svg");
+}
+
+.ic-development-white {
+  background-image: url("../img/icons/development-white.svg");
+}
+
+.active {
+  .ic-development-white {
+    background-image: url("../img/icons/development.svg");
+  }
+}
+
+.ic-design {
+  background-image: url("../img/icons/design.svg");
+}
+
+.ic-design-white {
+  background-image: url("../img/icons/design-white.svg");
+}
+
+.active {
+  .ic-design-white {
+    background-image: url("../img/icons/design.svg");
+  }
+}
+
+.ic-qa-white {
+  background-image: url("../img/icons/qa-white.svg");
+}
+
+.active {
+  .ic-qa-white {
+    background-image: url("../img/icons/qa.svg");
+  }
+}
+
+// TC icons
+
+.ic-data-science-white {
+  background-image: url("../img/icons/data-science-white.svg");
+}
+
+.active {
+  .ic-data-science-white {
+    background-image: url("../img/icons/data-science.svg");
+  }
+}
+
+// apps icons
+.ic-apps-info {
+  background-image: url("../img/icons/info.svg");
+}
+
+.ic-apps-oval-4 {
+  background-image: url("../img/icons/oval-4.svg");
+}
+
+.ic-apps-oval-5 {
+  background-image: url("../img/icons/oval-5.svg");
+}
+
+.ic-apps-oval-6 {
+  background-image: url("../img/icons/oval-6.svg");
+}
+
+.ic-arrow-right {
+  background-image: url("../img/icons/arrow-right.svg");
+}
+
+@media (max-width: $screen-sm) {
+  .ic {
+    &.ic-m {
+      width: 28px;
+      height: 28px;
+    }
+  }
+}

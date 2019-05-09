@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>Topcoder 3.0</title>
+
+  <link rel="stylesheet" href="./css/aos.css">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- D3 library and flubber library to implement morph -->
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://unpkg.com/flubber@0.3.0"></script>
+  <script src="https://unpkg.com/animejs@2.2.0/anime.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
+
+  <!-- AOS library for scrolling animation-->
+  <script src="js/aos.js"></script>
+
+  <!-- Tab Component -->
+  <script src="js/tab.js"></script>
+
+  <!-- TC script -->
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <div class="container dark-theme">
+    <div class="wrapper home-top-wrapper">
+      <!-- Navigation, just image -->
+      <img src="./img/topnav.png" class="full hide-phone" alt="Navigation" />
+      <img src="./img/topnav-phone.png" class="full show-only-phone" alt="Navigation" />
+
+      <!-- Title and hero video block -->
+      <div class="section vertical-padding-m">
+        <div class="hero-video-block">
+          <div class="grid">
+            <div class="column-6 column-small-12">
+              <h1 class="uppercase title" data-aos="fade-up">
+                The simplest way to access & execute with incredible digital talent
+              </h1>
+            </div>
+            <div class="column-6 column-small-12">
+              <div class="video">
+                <svg class="svg-masked" viewBox="0 0 288 288" version="1.1" preserveAspectRatio="xMidYMin slice"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <linearGradient id="PSgrad_0" x1="70.711%" x2="0%" y1="70.711%" y2="0%">
+                    <stop offset="0%" stop-color="rgb(95,54,152)" stop-opacity="1" />
+                    <stop offset="100%" stop-color="rgb(247,109,138)" stop-opacity="1" />
+                  </linearGradient>
+                  <linearGradient x1="50%" y1="100%" x2="50%" y2="4.42311411%" id="linearGradient-1">
+                    <stop stop-color="#9D41C9" offset="0%"></stop>
+                    <stop stop-color="#54B4C0" offset="100%"></stop>
+                  </linearGradient>
+                  <defs>
+                    <mask id="image-mask">
+                      <image width="100%" height="100%" preserveAspectRatio="xMidYMid slice" xlink:href="./img/rawpixel-com-323215-1024x683.jpg"/>
+                    </mask>
+                  </defs>
+                  
+                  <path mask="url(#image-mask)" id="path1" 
+                    d="M126.73,213.42c49.81,4.31,105.59,63.26,133.35-5.25s-11.26-152-89.65-159.55S40.86,56.85,22,130.37,76.9,209.12,126.73,213.42Z" 
+                    style="fill:url(#PSgrad_0)">
+                  </path>
+
+                  <path style="display:none" id="path2" fill="url(#PSgrad_0)" mask="url(#image-mask)">
+                    
+                  </path>
+
+                  <path style="display:none" id="path3" fill="url(#PSgrad_0)" mask="url(#image-mask)">
+                    <animate  repeatCount="indefinite" attributeName="d" dur="12s"
+values="M37.5,186c-12.1-10.5-11.8-32.3-7.2-46.7c4.8-15,13.1-17.8,30.1-36.7C91,68.8,83.5,56.7,103.4,45
+c22.2-13.1,51.1-9.5,69.6-1.6c18.1,7.8,15.7,15.3,43.3,33.2c28.8,18.8,37.2,14.3,46.7,27.9c15.6,22.3,6.4,53.3,4.4,60.2
+c-3.3,11.2-7.1,23.9-18.5,32c-16.3,11.5-29.5,0.7-48.6,11c-16.2,8.7-12.6,19.7-28.2,33.2c-22.7,19.7-63.8,25.7-79.9,9.7
+c-15.2-15.1,0.3-41.7-16.6-54.9C63,186,49.7,196.7,37.5,186z;
+
+
+M51,171.3c-6.1-17.7-15.3-17.2-20.7-32c-8-21.9,0.7-54.6,20.7-67.1c19.5-12.3,32.8,5.5,67.7-3.4C145.2,62,145,49.9,173,43.4
+c12-2.8,41.4-9.6,60.2,6.6c19,16.4,16.7,47.5,16,57.7c-1.7,22.8-10.3,25.5-9.4,46.4c1,22.5,11.2,25.8,9.1,42.6
+c-2.2,17.6-16.3,37.5-33.5,40.8c-22,4.1-29.4-22.4-54.9-22.6c-31-0.2-40.8,39-68.3,35.7c-17.3-2-32.2-19.8-37.3-34.8
+C48.9,198.6,57.8,191,51,171.3z;
+
+M37.5,186c-12.1-10.5-11.8-32.3-7.2-46.7c4.8-15,13.1-17.8,30.1-36.7C91,68.8,83.5,56.7,103.4,45
+c22.2-13.1,51.1-9.5,69.6-1.6c18.1,7.8,15.7,15.3,43.3,33.2c28.8,18.8,37.2,14.3,46.7,27.9c15.6,22.3,6.4,53.3,4.4,60.2
+c-3.3,11.2-7.1,23.9-18.5,32c-16.3,11.5-29.5,0.7-48.6,11c-16.2,8.7-12.6,19.7-28.2,33.2c-22.7,19.7-63.8,25.7-79.9,9.7
+c-15.2-15.1,0.3-41.7-16.6-54.9C63,186,49.7,196.7,37.5,186z	"/>
+                </path>
+                <path style="display:none" id="path4" fill="url(#linearGradient-1)">
+                    
+                </path>
+
+                <path style="display:none" id="path5" fill="url(#linearGradient-1)" d="M945,798.59c232,32.45,411.37,67.48,458-100.71,29-104.59-41.69-226-26-341.29,18.77-137.85,30.35-274.18-23-321.51-89.5-79.41-316.12.47-434.5,3C804.91,40.57,865.25,54.27,673,47.67S128.8-40.59,51,51.94C-6,119.73-2,287.27,10,413.16,24.76,568-32.76,695.76,31,793.75,99.05,898.34,713,766.15,945,798.59Z">
+                </path>
+                </svg>
+                
+                <i class="ic ic-l ic-play-white"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 blocks 'Ready to start a project?' and 'Have a complex project?' -->
+      <div class="section">
+        <div class="grid">
+          <div class="column-6 column-small-12">
+           sdfsdf
+          </div>
+          <div class="column-6 column-small-12 small-margin-top">
+          sdfsdfsdf
+          </div>
+        </div>
+      </div>
+
+      <!-- clients' logos -->
+      <div class="section">
+        <div class="flex middle space-between space-around wrap logos-block">
+          <div class="logo-block">
+            <a href="#">
+              <img src="./img/logos/ge.png" alt="GE" />
+            </a>
+          </div>
+          <div class="logo-block">
+            <a href="#">
+              <img src="./img/logos/ferguson.png" alt="Ferguson" />
+            </a>
+          </div>
+          <div class="logo-block">
+            <a href="#">
+              <img src="./img/logos/ibm.png" alt="IBM" />
+            </a>
+          </div>
+          <div class="logo-block">
+            <a href="#">
+              <img src="./img/logos/acc.png" alt="ACC" />
+            </a>
+          </div>
+          <div class="logo-block">
+            <a href="#">
+              <img src="./img/logos/comcast.png" alt="Comcast" />
+            </a>
+          </div>
+          <div class="logo-block">
+            <a href="#">
+              <img src="./img/logos/zurich.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Our Talent, Your Success block -->
+  <div class="container curve-theme">
+    <div class="wrapper">
+      <div class="grid">
+        <div class="column-5 column-small-12">
+          <div class="block portrait" data-aos="fade-up" data-aos-delay="200">
+            <img src="./img/checkspir.png" class="full" alt="" />
+            <svg class="morph" width="85px" height="79px" viewBox="0 0 85 79" version="1.1"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <!-- Generator: sketchtool 53.2 (72643) - https://sketchapp.com -->
+              <title>5029EC6D-A55E-4382-918D-CBF078D4A6B0</title>
+              <desc>Created with sketchtool.</desc>
+              <defs>
+                <linearGradient x1="4.99059995%" y1="43.9537565%" x2="100%" y2="56.678555%" id="linearGradient-1">
+                  <stop stop-color="#2C95D7" offset="0%"></stop>
+                  <stop stop-color="#06D6A0" offset="100%"></stop>
+                </linearGradient>
+              </defs>
+              <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Homepage-V2" transform="translate(-389.000000, -1404.000000)" fill="url(#linearGradient-1)">
+                  <path
+                    d="M436.877825,1482.21245 C462.810189,1477.77747 474.458731,1459.25662 473.9862,1445.18143 C473.513669,1431.10625 462.554913,1417.78028 448.131034,1412.88359 C433.707156,1407.9869 416.100442,1396.06925 404.308474,1412.05086 C392.516506,1428.03247 383.400924,1452.20018 393.059957,1458.85017 C411.382882,1471.46503 410.945462,1486.64743 436.877825,1482.21245 Z"
+                    id="Oval-Copy-9"
+                    transform="translate(431.500000, 1443.500000) rotate(180.000000) translate(-431.500000, -1443.500000) ">
+                  </path>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="column-7 column-small-12 small-margin-top talent-success-section">
+          <div class="block" data-aos="fade-up" data-aos-delay="400">
+            <h2 class="title uppercase">Our Talent, Your Success</h2>
+            <h5 class="subtitle">Outsource your work to our community for the best results</h5>
+            <div class="tab margin-top-l">
+              <div id="tab-background" class="tab-background">
+                <svg width="690px" height="383px" viewBox="0 0 680 383" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <defs>
+                    <linearGradient x1="56.5517867%" y1="34.3741681%" x2="49.0003118%" y2="60.2826622%" id="tab-background-linier-gradient">
+                      <stop stop-color="#FFC43D" offset="0%"></stop>
+                      <stop stop-color="#EF476F" offset="100%"></stop>
+                    </linearGradient>
+                  </defs>
+                  <g stroke="none" fill="none" fill-rule="evenodd">
+                    <g fill="url(#tab-background-linier-gradient)">
+                      <path d="M18.2,178c42-64.9,28-64.9,39-103C75,13.3,81.2,10,117.9,1s41.3,45,77.3,83.8c37.9,40.7,108.4,9.4,164,18.2,88,14,201.3-12,256,25,57.7,39,74,108,44,168-37.9,75.8-173,52-268,64-119.9,15.1-228.6,35-323.3-16.6C-4.9,303.8-15.2,229.6,18.2,178Z" id="tab-background-svg"></path>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <div class="tab-item-headers">
+                <div class="tab-item-header active first" data-tab-index="1">
+                  <i class="ic ic-m ic-development-white"></i>
+                </div>
+                <div class="tab-item-header" data-tab-index="2">
+                  <i class="ic ic-m ic-design-white"></i>
+                </div>
+                <div class="tab-item-header" data-tab-index="3">
+                  <i class="ic ic-m ic-data-science-white"></i>
+                </div>
+                <div class="tab-item-header last" data-tab-index="4">
+                  <i class="ic ic-m ic-qa-white"></i>
+                </div>
+              </div>
+              <div class="tab-item-containers">
+                <div id="tab-item-container-1" class="tab-item-container active">
+                  <h5 class="tab-item-title">World Class Developers</h5>
+                  <div class="tab-item-description">Consistent, reliable, knowledgeable, and fast. That’s the Topcoder development community. Find
+                    talent at the forefront of tech to offset your team and get digital work done faster.</div>
+                </div>
+                <div id="tab-item-container-2" class="tab-item-container">
+                  <h5 class="tab-item-title">Great Designers</h5>
+                  <div class="tab-item-description">Industry-leading designers, at your fingertips. Access an incredible breadth of creative
+                    perspectives and design expertise to find the best creative solution for your project.</div>
+                </div>
+                <div id="tab-item-container-3" class="tab-item-container">
+                  <h5 class="tab-item-title">Data Science Geniuses</h5>
+                  <div class="tab-item-description">We’re not exaggerating. Tap the largest, most diverse Data Science pool of any crowdsourcing
+                    platform. This is how Topcoder was born: competitive programming for fun (and bragging rights).
+                  </div>
+                </div>
+                <div id="tab-item-container-4" class="tab-item-container">
+                  <h5 class="tab-item-title">QA & Testing Talent</h5>
+                  <div class="tab-item-description">Meticulous QA and testing from a diverse pool of talent. Get QA and Testing done quickly for
+                    complex scenarios, then speed your dev  process and launch.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Make the Gig Economy ... work block -->
+  <div class="container gray-theme" data-aos="fade-up" data-aos-delay="200">
+    <div class="section">
+      <div class="block call-to-action-block align-center">
+        <h3 class="heading">MAKE THE GIG ECONOMY WORK FOR YOUR ENTERPRISE</h3>
+        <div class="block bottom">
+          <a href="#" class="btn btn-primary">Learn about entprise programs</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Customer success block -->
+  <div class="container teal-theme">
+    <div class="wrapper">
+      <div class="block block-vertical-margin">
+        <div class="grid">
+          <div class="column-6 column-small-12">
+            <div class="customer-block-intro block" data-aos="fade-up" data-aos-delay="200">
+              <h2 class="section-title">OUR CUSTOMERS,<br />THEIR SUCCESS</h2>
+              <div class="block bottom">
+                <a href="#" class="btn btn-primary-white">VIEW MORE SUCCESS STORIES</a>
+              </div>
+            </div>
+          </div>
+          <div class="column-6 column-small-12 small-margin-top">
+            <div class="block customer-block size-1 curve" data-aos="fade-up" data-aos-delay="400">
+              <div class="grid grid-collapse flex">
+                <div class="column-7 column-small-12">
+                  <div class="content-wrapper">
+                    <div class="image">
+                      <img src="./img/logos/ibm.png" alt="" />
+                    </div>
+                    <h6 class="heading">
+                      PROJECT NAME
+                    </h6>
+                    <div class="body">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dictum suscipit quam ut laoreet.
+                      Curabitur accumsan, mi id convallis sagittis, elit eros.
+                    </div>
+                    <div class="bottom">
+                      <a href="#" class="btn btn-link">READ MORE</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="column-5 customer-block-image" style="background-image: url('./img/ibm-customer.png')">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block block-vertical-margin">
+        <div class="grid">
+          <div class="column-8 column-small-12">
+            <div class="block customer-block size-2 curve" data-aos="fade-up" data-aos-delay="400">
+              <div class="grid grid-collapse flex">
+                <div class="column-5 col-1">
+                  <div class="content-wrapper">
+                    <div class="image">
+                      <img src="./img/logos/zurich.png" alt="" />
+                    </div>
+                    <h6 class="heading">
+                      PROJECT NAME
+                    </h6>
+                    <div class="content">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dictum suscipit quam ut laoreet.
+                      Curabitur accumsan, mi id convallis sagittis, elit eros.
+                    </div>
+                    <div class="block">
+                      <a href="#" class="btn btn-link">READ MORE</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column-7 customer-block-image"
+                  style="background-image: url('./img/eric-weber-804684-unsplash.png')">
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column-4 column-small-12 small-margin-top">
+            <div class="grid grid-collapse">
+              <div class="column-12 column-small-6">
+                <div class="block customer-block size-3 curve" data-aos="fade-up" data-aos-delay="200">
+                  <img src="./img/logos/ferguson-large.png" alt="" />
+                </div>
+              </div>
+              <div class="column-12 column-small-6 block-vertical-margin small-remove-margin-top">
+                <div class="block customer-block size-4 curve" data-aos="fade-up" data-aos-delay="200">
+                  <img src="./img/logos/comcast-large.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Call to action block Ready to go-->
+  <div class="container">
+    <div class="block small-call-to-action-block">
+      <div class="h6">
+        <div>READY TO GO?</div>
+        <div><a href="#">START A PROJECT</a> OR <a href="#">TALK TO SALES</a></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="container footer">
+    <div class="wrapper hide-phone">
+      <div class="block footer-logo">
+        <img src="./img/logos/tc-inverted.svg" alt="" />
+      </div>
+      <div class="block flex footer-body">
+        <div class="flex-grow footer-column">
+          <div class="footer-header">
+            SOLUTIONS
+          </div>
+          <ul>
+            <li><a href="#">Apps</a></li>
+            <li><a href="#">Websites</a></li>
+            <li><a href="#">Analytics & Data Science</a></li>
+            <li><a href="#">Digital Product Design</a></li>
+            <li><a href="#">Testing & Quality Insurance</a></li>
+            <li><a href="#">Development Tasks</a></li>
+          </ul>
+        </div>
+        <div class="flex-grow footer-column">
+          <div class="footer-header">
+            ENTERPRISE OFFERINGS
+          </div>
+          <ul>
+            <li><a href="#">Crowd-Powered Analytics</a></li>
+            <li><a href="#">Crowd-Powered QA</a></li>
+            <li><a href="#">Talent as a Service</a></li>
+            <li><a href="#">Workforce Transformation</a></li>
+          </ul>
+        </div>
+        <div class="flex-grow footer-column">
+          <div class="footer-header">
+            Company
+          </div>
+          <ul>
+            <li><a href="#">About Topcoder</a></li>
+            <li><a href="#">Leadership</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Jobs</a></li>
+          </ul>
+        </div>
+        <div class="flex-grow footer-column">
+          <div class="footer-header">
+            &nbsp;
+          </div>
+          <ul>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Community</a></li>
+          </ul>
+        </div>
+        <div class="flex-grow-2 footer-column">
+          <div class="footer-header">
+            CONTACT US
+          </div>
+          <div class="grid grid-collapse">
+            <div class="column-6">
+              <ul>
+                <li><a href="#">(855) 867-1356</a></li>
+                <li>Mon–Fri 8am–5pm EST</li>
+                <li><a href="#">Talk to Sales</a></li>
+              </ul>
+            </div>
+            <div class="column-6">
+              <ul>
+                <li>1234 Address</li>
+                <li>Suite 1234</li>
+                <li>Indianapolis, IN 12345</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block footer-bottom flex space-arround">
+        <ul class="copyright flex-grow">
+          <li>© 2019 TOPCODER</li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of use</a></li>
+        </ul>
+        <ul class="social-links">
+          <li class=""><a href="#" target="_blank"><img src="./img/icons/facebook.svg" alt="" /></a></li>
+          <li class=""><a href="#" target="_blank"><img src="./img/icons/instagram.svg" alt="" /></a></li>
+          <li class=""><a href="#" target="_blank"><img src="./img/icons/twitter.svg" alt="" /></a></li>
+          <li class=""><a href="#" target="_blank"><img src="./img/icons/linkedin.svg" alt="" /></a></li>
+          <li class=""><a href="#" target="_blank"><img src="./img/icons/youtube.svg" alt="" /></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wrapper show-only-phone">
+      <div class="block footer-logo">
+        <img src="./img/logos/tc-inverted.svg" alt="" />
+      </div>
+      <div class="block flex footer-body">
+        <div class="flex-grow footer-column">
+          <ul>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Enterprise Offerings</a></li>
+            <li><a href="#">Company</a></li>
+          </ul>
+        </div>
+        <div class="flex-grow footer-column">
+          <ul>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Resources</a></li>
+          </ul>
+        </div>
+        <div class="flex-grow footer-column">
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="block footer-bottom">
+        <ul class="social-links">
+            <li class=""><a href="#" target="_blank"><img src="./img/icons/facebook.svg" alt="" /></a></li>
+            <li class=""><a href="#" target="_blank"><img src="./img/icons/instagram.svg" alt="" /></a></li>
+            <li class=""><a href="#" target="_blank"><img src="./img/icons/twitter.svg" alt="" /></a></li>
+            <li class=""><a href="#" target="_blank"><img src="./img/icons/linkedin.svg" alt="" /></a></li>
+            <li class=""><a href="#" target="_blank"><img src="./img/icons/youtube.svg" alt="" /></a></li>
+        </ul>
+        <ul class="copyright flex-grow">
+          <li>© 2019 TOPCODER</li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of use</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

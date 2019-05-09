@@ -1,0 +1,85 @@
+// Utility classes
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 9999;
+  text-align: center;
+  padding: 75px;
+
+  .svg-masked {
+    opacity: 0;
+    transition: all 1s;
+    max-height: 100%;
+    max-width: 1172px;
+
+    &.show {
+      opacity: 1;
+    }
+
+    // &.move {
+    //   top: 0 !important;
+    //   left: 0 !important;
+    // }
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.vertical-padding-m {
+  padding-top: $tc-spacing-m;
+  padding-bottom: $tc-spacing-m;
+}
+
+.vertical-padding-s {
+  padding-top: $tc-spacing-s;
+  padding-bottom: $tc-spacing-s;
+}
+
+.margin-top-l {
+  margin-top: $tc-spacing-l;
+}
+
+.margin-top-xl {
+  margin-top: $tc-spacing-xl;
+}
+
+.margin-left-xl {
+  margin-left: $tc-spacing-xl;
+}
+
+img.full {
+  width: 100%;
+}
+
+.show-only-phone {
+  display: none;
+}
+
+@media (max-width: $screen-sm) {
+  .small-margin-top {
+    margin-top: $tc-small-gutter-spacing;
+  }
+
+  .small-remove-margin-top {
+    margin-top: 0 !important;
+  }
+
+  .hide-phone {
+    display: none;
+  }
+
+  .show-only-phone {
+    display: block;
+  }
+}

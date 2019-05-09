@@ -1,0 +1,108 @@
+// Typography
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: "Barlow Condensed";
+}
+
+h1,
+.h1 {
+  font-size: 80px;
+  line-height: 74px;
+  font-weight: 600;
+}
+
+h2,
+.h2 {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 500;
+}
+
+h3,
+.h3 {
+  font-size: 48px;
+  line-height: 50px;
+  font-weight: 500;
+}
+
+h4,
+.h4 {
+  font-size: 34px;
+  line-height: 38px;
+  font-weight: 500;
+}
+
+h5,
+.h5 {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 600;
+  font-family: "Barlow";
+}
+
+h6,
+.h6 {
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 600;
+  font-family: "Barlow";
+}
+
+.subtitle,
+.subtitle-1,
+.subtitle-2 {
+  font-family: "Roboto";
+  font-weight: 500;
+}
+
+.subtitle {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.subtitle-1 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.subtitle-2 {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+hr {
+  &.hr-wave-lg {
+    background-image: url("../img/wave-large.png");
+    border: 0px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &.hr-app-wave-sm {
+    background-image: url("../img/app-wave.png");
+    border: 0px;
+    height: 14px;
+    width: 305px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+body {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 26px;
+}

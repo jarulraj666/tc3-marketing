@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="622px" height="484px" viewBox="0 0 622 484" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 53.2 (72643) - https://sketchapp.com -->
+    <title>AFCA1987-EB0D-45FC-B344-A98605596877</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="5.07040593%" id="linearGradient-1">
+            <stop stop-color="#9D41C9" offset="0%"></stop>
+            <stop stop-color="#54B4C0" offset="100%"></stop>
+        </linearGradient>
+        <path d="M372.428772,510.842877 C484.084196,494.829738 629.598148,584.546771 675.818872,401.370916 C652.039595,218.195061 568.483415,48.0257754 366.538191,57.0454842 C114.592966,126.065193 60.2920486,220.852968 62.943101,259.448227 C61.5941533,518.043487 150.773348,566.856016 362.428772,510.842877 Z" id="path-2"></path>
+    </defs>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage-V2" transform="translate(-729.000000, -145.000000)">
+            <g id="Screen-Shot-2018-11-28-at-11.45.14-AM" transform="translate(694.000000, 58.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Mask" fill="url(#linearGradient-1)" transform="translate(364.732668, 307.545550) rotate(17.000000) translate(-364.732668, -307.545550) " xlink:href="#path-2"></use>
+            </g>
+        </g>
+    </g>
+</svg>

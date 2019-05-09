@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="673px" height="381px" viewBox="0 0 673 381" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 53.2 (72643) - https://sketchapp.com -->
+    <title>2F500513-076B-43F2-9639-4A5FDFE308CA</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="56.5517867%" y1="34.0033568%" x2="49.0003118%" y2="60.5266766%" id="linearGradient-1">
+            <stop stop-color="#FFC43D" offset="0%"></stop>
+            <stop stop-color="#EF476F" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Additional-Assets-For-Dev" transform="translate(-750.000000, -32.000000)" fill="url(#linearGradient-1)">
+            <g id="Data-Science" transform="translate(750.000000, 32.000000)">
+                <path d="M14.1827521,182 C29.1827521,135 95.8537566,110.146659 162.182752,115 C285.182752,124 362.240608,118.082703 359.182752,82 C354.182752,23 369.475945,9 405.329349,2 C441.182752,-5 477.182752,18 477.182752,53 C477.182752,69.3869388 485.182752,90 507.182752,100 C528.951373,109.894828 527.794804,102.076506 583.182752,109 C623.182752,114 638.441265,121.447286 655.182752,168 C669.927349,209 685.182752,240 655.182752,300 C617.281797,375.80191 482.182752,352 387.182752,364 C267.268006,379.147126 158.645168,399.022236 63.885121,347.394997 C-8.87355793,307.75456 -8.82091786,254.078166 14.1827521,182 Z" id="Rectangle-Copy-6"></path>
+            </g>
+        </g>
+    </g>
+</svg>

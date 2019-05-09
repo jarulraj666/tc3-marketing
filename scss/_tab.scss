@@ -1,0 +1,124 @@
+// Tab Component
+
+.tab-item-headers {
+  text-align: center;
+
+  .tab-item-header {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    margin: 0 31px;
+    cursor: pointer;
+
+    &:nth-child(4n + 1) {
+      background-image: url(../img/morph/tab-oval-0.svg);
+
+      &.active {
+        background-image: url(../img/morph/tab-oval-0-active.svg);
+      }
+    }
+
+    &:nth-child(4n + 2) {
+      background-image: url(../img/morph/tab-oval-1.svg);
+
+      &.active {
+        background-image: url(../img/morph/tab-oval-1-active.svg);
+      }
+    }
+
+    &:nth-child(4n + 3) {
+      background-image: url(../img/morph/tab-oval-2.svg);
+
+      &.active {
+        background-image: url(../img/morph/tab-oval-2-active.svg);
+      }
+    }
+
+    &:nth-child(4n) {
+      background-image: url(../img/morph/tab-oval-3.svg);
+
+      &.active {
+        background-image: url(../img/morph/tab-oval-3-active.svg);
+      }
+    }
+
+    .ic {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      -moz-transform: translateX(-50%) translateY(-50%);
+    }
+  }
+}
+
+.tab-item-containers {
+  margin-top: -88px;
+  margin-left: 50px;
+
+  .tab-item-container {
+    opacity: 0;
+    display: none;
+    padding: 180px 70px 110px;
+    color: $tc-white;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &.active {
+      display: block;
+      opacity: 1;
+    }
+
+    .tab-item-title {
+      margin-bottom: 10px;
+    }
+  }
+
+  .tab-item-title {
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+  }
+
+  .tab-item-description {
+    line-height: 24px;
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .tab-item-containers {
+    margin-top: -76px;
+    margin-left: 0;
+
+    .tab-item-container {
+      padding: 80px 32px 60px;
+    }
+  }
+
+  .tab-item-headers {
+    .tab-item-header {
+      width: 50px;
+      margin: 0px 16px;
+
+      &.first {
+        margin-left: -37px;
+      }
+
+      &.last {
+        margin-right: -41px;
+      }
+    }
+  }
+}
+
+.tab-background {
+  position: absolute;
+  left: 30px;
+  bottom: 10px;
+  z-index: -1;
+}
