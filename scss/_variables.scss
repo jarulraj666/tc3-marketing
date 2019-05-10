@@ -16,9 +16,12 @@ $tc-turquoise-light1: #45e1b8;
 $tc-turquoise-light2: #82eacf;
 $tc-turquoise-light3: #c1f5e7;
 
+$tc-green: #5ce35c;
+
 $tc-teal: #26b3c5;
 $tc-teal-dark1: #1e94a3;
 $tc-teal-dark2: #227681;
+$tc-teal-dark3: #226169;
 $tc-teal-light1: #54b4c0;
 $tc-teal-light2: #8dccd4;
 $tc-teal-light3: #c6e6ea;
@@ -26,6 +29,7 @@ $tc-teal-light3: #c6e6ea;
 $tc-blue: #2c95d7;
 $tc-blue-dark1: #2984bd;
 $tc-blue-dark2: #16679a;
+$tc-blue-dark3: #8b41b0;
 $tc-blue-light1: #50ade8;
 $tc-blue-light2: #83c5ee;
 $tc-blue-light3: #bae1f9;
@@ -44,6 +48,13 @@ $tc-spacing-m: 24px;
 $tc-spacing-l: 48px;
 $tc-spacing-xl: 96px;
 
+// Letter spacing
+$lt-spacing-xxs: 0.1px;
+$lt-spacing-xs: 0.2px;
+$lt-spacing-s: 0.4px;
+$lt-spacing-m: 0.8px;
+$lt-spacing-l: 1.3px;
+$lt-spacing-xl: 1.6px;
 // breakpoints
 $screen-lg: 1200px;
 $screen-md: 992px;

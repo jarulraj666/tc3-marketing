@@ -1,0 +1,487 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Topcoder 3.0</title>
+
+    <link rel="stylesheet" href="./css/aos.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- D3 library and flubber library to implement morph -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://unpkg.com/flubber@0.3.0"></script>
+    <script src="https://unpkg.com/animejs@2.2.0/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
+
+    <!-- AOS library for scrolling animation-->
+    <script src="js/aos.js"></script>
+
+    <!-- Tab Component -->
+    <script src="js/tab.js"></script>
+
+    <!-- TC script -->
+    <script src="js/script.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="solution-top-wrapper">
+        <!-- Navigation, just image -->
+        <img src="./img/topnav.png" class="full hide-phone" alt="Navigation" />
+        <img
+          src="./img/topnav-phone.png"
+          class="full show-only-phone"
+          alt="Navigation"
+        />
+
+        <!-- Solution title and descripton block -->
+        <div class="section solution-type" data-aos="fade-up">
+          <h1 class="title websites-title uppercase">Websites</h1>
+          <p class="subtitle">
+            Design, create, and go-live with custom web experiences that help
+            you win
+          </p>
+        </div>
+      </div>
+
+      <hr class="hr-app-wave-sm" />
+
+      <!-- Config your Website title block -->
+      <div
+        class="section config align-center"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <h2 class="title uppercase">Configure Your Website</h2>
+        <h6 class="description uppercase">
+          Select the phases you need below to get started
+        </h6>
+      </div>
+
+      <!-- Config your app - available steps block-->
+      <div class="section" data-aos="fade-up" data-aos-delay="400">
+        <div class="software-process">
+          <div class="duration subtitle-1"><span>7 Phases, 17 Weeks</span></div>
+          <div class="software-process-inner flex">
+            <div class="design">
+              <a href="#">
+                <h5 class="h5">Design</h5>
+                <span class="subtitle-1">3d</span>
+              </a>
+            </div>
+            <div class="dev">
+              <a href="#">
+                <h5 class="h5">Development</h5>
+                <span class="subtitle-1">3d</span>
+              </a>
+            </div>
+            <div class="qa">
+              <a href="#">
+                <h5 class="h5">QA</h5>
+                <span class="subtitle-1">3d</span>
+              </a>
+            </div>
+            <div class="deploy">
+              <a href="#">
+                <h5 class="h5">Deploy</h5>
+                <span class="subtitle-1">3d</span>
+              </a>
+            </div>
+          </div>
+          <div
+            class="software-process-bottom small-margin-top block flex center"
+          >
+            <div class="app-price-section block">
+              <div class="estimated-price uppercase">
+                <label>Estimated Starting Price of:</label>
+              </div>
+              <div class="price">
+                <span class="h3">$134,000</span>
+                <i class="ic ic-apps-info"></i>
+              </div>
+            </div>
+
+            <a href="#" class="uppercase btn btn-success btn-start">
+              Start your app
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- app solution advantages block -->
+    <div
+      class="container gray-theme-solution"
+      data-aos="fade-up"
+      data-aos-delay="200"
+    >
+      <div class="section">
+        <div class="solution-info grid">
+          <div
+            class="column-4 column-small-12 vertical-padding-s"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <img src="./img/icons/oval-4.svg" />
+            <h5 class="title uppercase vertical-padding-s">
+              BUILD A BEAUTIFUL WEBSITE
+            </h5>
+            <p class="description">
+              Explore 4x to 8x more concepts to choose a modern design that
+              makes an impact
+            </p>
+          </div>
+          <div
+            class="column-4 column-small-12 vertical-padding-s"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <img src="./img/icons/oval-4.svg" />
+            <h5 class="title uppercase vertical-padding-s">
+              make it custom
+            </h5>
+            <p class="description">
+              Build a custom CMS that allows for incredible digital experiences
+              and flexibility over time
+            </p>
+          </div>
+          <div
+            class="column-4 column-small-12 vertical-padding-s"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <img src="./img/icons/oval-4.svg" />
+            <h5 class="title uppercase vertical-padding-s">
+              save on total costs
+            </h5>
+            <p class="description">
+              Create a beautiful site for 20% to 40% less  than using a
+              traditional agency
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr class="hr-wave-lg" />
+
+      <!-- Our expertise section -->
+      <div class="section">
+        <div class="solution-details grid">
+          <div
+            class="column-6 solution-left column-small-12 block portrait"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="solution-box-inner"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <h3 class="title uppercase">We get you</h3>
+              <div class="description">
+                <p>
+                  We’ll help you go from a vision in your brain, to a published
+                  website that wows and wins.
+                </p>
+                <ul>
+                  <li>
+                    Explore multiple design concepts to hone in on a style you
+                    and your users will love
+                  </li>
+                  <li>
+                    Your new website will look fantastic (and perform
+                    seamlessly) on desktop, tablet, and mobile
+                  </li>
+                  <li>
+                    From design, our talent moves to develop, test, and help you
+                    launch your new site.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="solution-box-inner"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <h3 class="title uppercase">We’re with you</h3>
+              <div class="description">
+                <p>
+                  We’ll help you go from a vision in your brain, to a published
+                  website that wows and wins.
+                </p>
+                <ul>
+                  <li>
+                    Your Topcoder Copilot is an on-platform human expert who
+                    manages the workflow with and for you
+                  </li>
+                  <li>
+                    You focus on the big, beautiful picture, and we handle the
+                    nitty gritty of “how” it gets done.
+                  </li>
+                  <li>
+                    Never be left guessing about what to do next; we’re here to
+                    make recommendations and assist every step of the way.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="solution-box-inner"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <h3 class="title uppercase">We’ve done this before</h3>
+              <div class="description">
+                <p>
+                  From crafting web experiences to honor the legacy of U.S.
+                  Veterans, to creating multiple b2c websites for brands like
+                  Land O’ Lakes and Purina, we’ve designed, built, and launched
+                  it.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="column-4 column-small-12 solution-right"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <img class="app-logo" src="./img/land-o-lakes.png" />
+            <div class="message">
+              <h4 class="message-text uppercase">
+                “We received results at a very reasonable cost. I think the
+                biggest value-add is that there’s no lead time. As soon as I can
+                get a statement of work turned around, I can start the work.””
+              </h4>
+              <div>
+                <div class="author-wrapper flex">
+                  <img class="" src="./img/icons/oval-7.svg" />
+                  <div class="margin-left-m">
+                    <span class="author">Allen Niere</span>
+                    <span class="role"
+                      >Digital Development Manager, Land O’ Lakes</span
+                    >
+                    <span>
+                      <div class="case-study subtitle-2 uppercase">
+                        <a href="#" class="btn-link" target="_blank"
+                          >Read case study</a>
+                        
+                      </div>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ready to build -->
+    <div
+      class="container gray-theme-build ready-to-build"
+      data-aos="fade-up"
+      data-aos-delay="400"
+    >
+      <div class="title">
+        <h3 class="uppercase ">Ready to build your app?</h3>
+      </div>
+      <div class="get-started">
+        <a hreft="#" class="btn btn-success uppercase">Get Started</a>
+      </div>
+    </div>
+
+    <!-- Call to action block Questions-->
+    <div class="container">
+      <div class="block small-call-to-action-block">
+        <div class="h6">
+          <div>QUESTIONS? SEE</div>
+          <div><a href="#">HOW IT WORKS</a> OR <a href="#">CONTACT US</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="container footer">
+      <div class="wrapper hide-phone">
+        <div class="block footer-logo">
+          <img src="./img/logos/tc-inverted.svg" alt="" />
+        </div>
+        <div class="block flex footer-body">
+          <div class="flex-grow footer-column">
+            <div class="footer-header">
+              SOLUTIONS
+            </div>
+            <ul>
+              <li><a href="#">Apps</a></li>
+              <li><a href="#">Websites</a></li>
+              <li><a href="#">Analytics & Data Science</a></li>
+              <li><a href="#">Digital Product Design</a></li>
+              <li><a href="#">Testing & Quality Insurance</a></li>
+              <li><a href="#">Development Tasks</a></li>
+            </ul>
+          </div>
+          <div class="flex-grow footer-column">
+            <div class="footer-header">
+              ENTERPRISE OFFERINGS
+            </div>
+            <ul>
+              <li><a href="#">Crowd-Powered Analytics</a></li>
+              <li><a href="#">Crowd-Powered QA</a></li>
+              <li><a href="#">Talent as a Service</a></li>
+              <li><a href="#">Workforce Transformation</a></li>
+            </ul>
+          </div>
+          <div class="flex-grow footer-column">
+            <div class="footer-header">
+              Company
+            </div>
+            <ul>
+              <li><a href="#">About Topcoder</a></li>
+              <li><a href="#">Leadership</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Jobs</a></li>
+            </ul>
+          </div>
+          <div class="flex-grow footer-column">
+            <div class="footer-header">
+              &nbsp;
+            </div>
+            <ul>
+              <li><a href="#">Case Studies</a></li>
+              <li><a href="#">Resources</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Community</a></li>
+            </ul>
+          </div>
+          <div class="flex-grow-2 footer-column">
+            <div class="footer-header">
+              CONTACT US
+            </div>
+            <div class="grid grid-collapse">
+              <div class="column-6">
+                <ul>
+                  <li><a href="#">(855) 867-1356</a></li>
+                  <li>Mon–Fri 8am–5pm EST</li>
+                  <li><a href="#">Talk to Sales</a></li>
+                </ul>
+              </div>
+              <div class="column-6">
+                <ul>
+                  <li>1234 Address</li>
+                  <li>Suite 1234</li>
+                  <li>Indianapolis, IN 12345</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block footer-bottom flex space-arround">
+          <ul class="copyright flex-grow">
+            <li>© 2019 TOPCODER</li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of use</a></li>
+          </ul>
+          <ul class="social-links">
+            <li class="">
+              <a href="#" target="_blank"
+                ><img src="./img/icons/facebook.svg" alt=""
+              /></a>
+            </li>
+            <li class="">
+              <a href="#" target="_blank"
+                ><img src="./img/icons/instagram.svg" alt=""
+              /></a>
+            </li>
+            <li class="">
+              <a href="#" target="_blank"
+                ><img src="./img/icons/twitter.svg" alt=""
+              /></a>
+            </li>
+            <li class="">
+              <a href="#" target="_blank"
+                ><img src="./img/icons/linkedin.svg" alt=""
+              /></a>
+            </li>
+            <li class="">
+              <a href="#" target="_blank"
+                ><img src="./img/icons/youtube.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="wrapper show-only-phone">
+        <div class="block footer-logo">
+          <img src="./img/logos/tc-inverted.svg" alt="" />
+        </div>
+        <div class="block flex footer-body">
+          <div class="flex-grow footer-column">
+            <ul>
+              <li><a href="#">Solutions</a></li>
+              <li><a href="#">Enterprise Offerings</a></li>
+              <li><a href="#">Company</a></li>
+            </ul>
+          </div>
+          <div class="flex-grow footer-column">
+            <ul>
+              <li><a href="#">Case Studies</a></li>
+              <li><a href="#">Resources</a></li>
+            </ul>
+          </div>
+          <div class="flex-grow footer-column">
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="block footer-bottom">
+          <ul class="social-links">
+            <li class="">
+              <a href="#" target="_blank"
+                ><img src="./img/icons/facebook.svg" alt=""
+              /></a>
+            </li>
+            <li class="">
+              <a href="#" target="_blank"
+                ><img src="./img/icons/instagram.svg" alt=""
+              /></a>
+            </li>
+            <li class="">
+              <a href="#" target="_blank"
+                ><img src="./img/icons/twitter.svg" alt=""
+              /></a>
+            </li>
+            <li class="">
+              <a href="#" target="_blank"
+                ><img src="./img/icons/linkedin.svg" alt=""
+              /></a>
+            </li>
+            <li class="">
+              <a href="#" target="_blank"
+                ><img src="./img/icons/youtube.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+          <ul class="copyright flex-grow">
+            <li>© 2019 TOPCODER</li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of use</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

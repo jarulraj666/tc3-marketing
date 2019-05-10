@@ -203,6 +203,9 @@ body {
 .margin-top-xl {
   margin-top: 96px; }
 
+.margin-left-m {
+  margin-left: 24px; }
+
 .margin-left-xl {
   margin-left: 96px; }
 
@@ -262,18 +265,33 @@ img.full {
       color: #26b3c5;
       letter-spacing: 0.3px; }
 
-.gray-theme-app {
+.gray-theme-solution {
   background-image: linear-gradient(0deg, #fff 0%, #f4f4f4 100%); }
-  .gray-theme-app:before {
+  .gray-theme-solution:before {
     background-image: url("../img/curve-4.png");
     background-size: cover;
     display: block;
     content: "";
     height: 90px;
     background-color: #fff; }
-  .gray-theme-app .section {
+  .gray-theme-solution .section {
     padding: 60px 0; }
-    .gray-theme-app .section .heading {
+    .gray-theme-solution .section .heading {
+      color: #26b3c5;
+      letter-spacing: 0.3px; }
+
+.gray-theme-build {
+  background: #f4f4f4; }
+  .gray-theme-build:before {
+    background-image: url("../img/curve-4.png");
+    background-size: cover;
+    display: block;
+    content: "";
+    height: 90px;
+    background-color: #fff; }
+  .gray-theme-build .section {
+    padding: 60px 0; }
+    .gray-theme-build .section .heading {
       color: #26b3c5;
       letter-spacing: 0.3px; }
 
@@ -527,8 +545,11 @@ img.full {
     color: #e9e9e9; }
 
 .btn-success {
-  background: #45e1b8;
+  background: #06d6a0;
   color: #fff; }
+  .btn-success:hover {
+    background: #2984bd;
+    color: #e9e9e9; }
 
 .btn-primary-white {
   background: #fff;
@@ -826,141 +847,89 @@ img.full {
     top: 100px;
     width: 60px; } }
 
-.apps-top-wrapper .apps {
+.solution-top-wrapper .solution-type {
   padding-top: 170px;
-  margin-left: 30%;
-  margin-right: 30%;
-  margin-bottom: 3.1%;
+  margin: 0 30% 3% 30%;
   text-align: center;
   color: #2a2a2a;
-  letter-spacing: 0.5px; }
-  .apps-top-wrapper .apps .title.apps-title {
+  letter-spacing: 0.4px; }
+  .solution-top-wrapper .solution-type .title.apps-title {
     color: #26b3c5; }
-  .apps-top-wrapper .apps .title.websites-title {
+  .solution-top-wrapper .solution-type .title.websites-title {
     color: #ffc43d; }
-  .apps-top-wrapper .apps .description {
-    color: #2a2a2a;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 36px;
+  .solution-top-wrapper .solution-type .subtitle {
     padding: 20px 66px 0; }
 
-.apps-config {
-  margin-top: 3.1%;
-  text-align: center; }
-  .apps-config .apps-config-description {
-    font-family: Barlow;
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 0.3px;
-    line-height: 22px;
-    padding-top: 10px; }
+.config {
+  margin-top: 3%; }
+  .config .description {
+    padding-top: 10px;
+    letter-spacing: 0.2px; }
 
-.apps-list {
-  margin-left: 80px;
-  margin-right: 80px;
-  margin-top: -48px;
+.software-process {
+  margin: -48px 80px 150px 80px;
   background-color: #f4f4f4;
   border-radius: 10px;
   max-width: 90%;
-  margin-bottom: 150px;
   padding-bottom: 30px; }
-  .apps-list .apps-duration {
+  .software-process .duration {
+    padding: 14px 55px 0 0;
     color: #7f7f7f;
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    line-height: 20px;
-    text-align: right;
-    padding-right: 55px;
-    padding-top: 14px; }
-  .apps-list .apps-list-inner {
-    margin-right: 25px;
-    margin-top: 10px;
+    letter-spacing: 0.4px;
+    text-align: right; }
+  .software-process .software-process-inner {
+    margin: 10px 25px 0;
     max-width: 99%; }
-    .apps-list .apps-list-inner div {
-      border-radius: 10px;
+    .software-process .software-process-inner div {
       margin-left: 5px;
-      padding-left: 19px; }
-      .apps-list .apps-list-inner div h5 {
-        color: #ffffff;
-        font-weight: 700;
-        line-height: 36px;
-        text-align: left;
+      padding-left: 19px;
+      border-radius: 10px;
+      color: #fff; }
+      .software-process .software-process-inner div .h5 {
         padding-top: 12px; }
-      .apps-list .apps-list-inner div span {
-        color: #ffffff;
-        font-size: 16px;
-        font-weight: 500;
-        letter-spacing: 0.5px;
-        line-height: 20px;
-        text-align: left;
+      .software-process .software-process-inner div span.subtitle-1 {
+        letter-spacing: 0.4px;
         display: block;
-        padding-top: 30px;
-        padding-bottom: 16px; }
-    .apps-list .apps-list-inner div:first-child {
+        padding: 30px 0 16px; }
+    .software-process .software-process-inner div:first-child {
       margin-left: 30px; }
-    .apps-list .apps-list-inner div:last-child {
+    .software-process .software-process-inner div:last-child {
       margin-right: 30px; }
-    .apps-list .apps-list-inner .rectangle-app-design {
+    .software-process .software-process-inner .design {
       background-color: #8231a9;
-      width: 220px; }
-    .apps-list .apps-list-inner .rectangle-app-dev {
+      width: 18.5%; }
+    .software-process .software-process-inner .dev {
       background-color: #16679a;
-      width: 610px; }
-    .apps-list .apps-list-inner .rectangle-app-qa {
+      width: 50%; }
+    .software-process .software-process-inner .qa {
       background-color: #1e94a3;
-      border-radius: 10px;
-      width: 220px; }
-    .apps-list .apps-list-inner .rectangle-app-deploy {
+      width: 18.5%; }
+    .software-process .software-process-inner .deploy {
       background-color: #4cc94c;
-      border-radius: 10px;
-      width: 154px; }
-  .apps-list .apps-bottom {
-    margin-top: 30px;
-    text-align: center;
-    align-items: center;
-    align-content: center; }
-    .apps-list .apps-bottom .estimated-price {
+      width: 13%; }
+  .software-process .software-process-bottom {
+    margin-top: 30px; }
+    .software-process .software-process-bottom .estimated-price {
       color: #2a2a2a;
-      font-family: Roboto;
+      display: inline;
       font-size: 12px;
       font-weight: 700;
       letter-spacing: 1.3px;
       line-height: 18px; }
-    .apps-list .apps-bottom .price {
-      color: #2a2a2a;
-      font-family: "Barlow Condensed";
-      font-size: 34px;
-      font-weight: 500;
-      line-height: 38px;
-      text-align: left;
+    .software-process .software-process-bottom .price {
       padding-left: 10px;
-      margin-top: 20px; }
-    .apps-list .apps-bottom .ic {
-      margin-left: 2px; }
-    .apps-list .apps-bottom .btn-start {
-      margin-left: 40px;
+      display: inline; }
+    .software-process .software-process-bottom .btn-start {
+      margin: 10px 0 0 40px;
       height: 42px;
-      font-family: Roboto;
-      font-size: 15px;
-      font-weight: 500;
-      letter-spacing: 1px;
+      letter-spacing: 0.8px;
       line-height: 18px; }
 
 .solution-info {
   text-align: center;
-  margin-left: 60px;
-  margin-right: 60px;
-  margin-bottom: 5%; }
+  margin: 0 60px 5% 60px; }
   .solution-info .description {
-    color: #2a2a2a;
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: center; }
+    color: #2a2a2a; }
 
 .solution-details {
   margin-left: 11.5%;
@@ -969,15 +938,9 @@ img.full {
     padding-bottom: 42px; }
   .solution-details .title {
     color: #26b3c5;
-    letter-spacing: 0.3px;
-    line-height: 50px; }
+    line-height: 48px; }
   .solution-details .description {
-    color: #2a2a2a;
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: left; }
+    color: #2a2a2a; }
     .solution-details .description ul {
       list-style-type: disc;
       padding-left: 20px; }
@@ -987,96 +950,700 @@ img.full {
       padding-bottom: 15px; }
   .solution-details .solution-left {
     margin-right: 120px; }
+  .solution-details .solution-right img.app-logo {
+    width: 60px;
+    height: 50px; }
+  .solution-details .solution-right .message {
+    margin-top: 20px; }
+    .solution-details .solution-right .message .message-text {
+      margin-bottom: 12px;
+      color: #555;
+      width: 305px; }
+    .solution-details .solution-right .message .author-wrapper {
+      margin-right: 50px; }
+    .solution-details .solution-right .message .author {
+      margin-bottom: 2px;
+      color: #2a2a2a;
+      display: block;
+      font-weight: 700; }
+    .solution-details .solution-right .message .role {
+      font-size: 16px; }
+    .solution-details .solution-right .message .case-study {
+      color: #06d6a0;
+      margin-top: 22px; }
+
+.ready-to-build {
+  text-align: center;
+  height: 360px; }
+  .ready-to-build .title {
+    margin-top: 35px; }
+  .ready-to-build .get-started {
+    margin-top: 30px; }
 
 @media (max-width: 768px) {
-  .apps-top-wrapper .apps {
-    margin-left: 15px;
-    margin-right: 15px; }
-    .apps-top-wrapper .apps .apps-title {
-      padding-top: 50px;
+  .solution-top-wrapper .solution-type {
+    margin: 0px 15px 0 15px;
+    padding-top: 70px; }
+    .solution-top-wrapper .solution-type .title {
+      padding-top: 70px;
       font-size: 42px;
-      letter-spacing: 0.3px;
+      letter-spacing: 0.2px;
       line-height: 36px; }
-    .apps-top-wrapper .apps .apps-description {
-      padding-left: 20px;
-      padding-right: 20px; }
-  .apps-config {
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-top: 60px; }
-    .apps-config .apps-config-title {
+    .solution-top-wrapper .solution-type .subtitle {
+      padding: 0 20px 0 20px;
+      font-size: 20px; }
+  .config {
+    margin: 60px 15px 0 15px; }
+    .config .title {
       font-size: 36px;
-      letter-spacing: 0.25px;
+      letter-spacing: 0.2px;
       line-height: 34px; }
-    .apps-config .apps-config-description {
+    .config .description {
       font-size: 18px;
-      letter-spacing: 0.25px;
+      letter-spacing: 0.2px;
       line-height: 20px; }
-  .apps-list {
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-top: 20px;
+  .software-process {
+    margin: 20px 15px 40px 15px;
     max-width: none; }
-    .apps-list .apps-duration {
-      font-size: 14px;
-      line-height: 18px;
-      text-align: center;
-      padding-top: 15px;
-      padding-right: 0; }
-    .apps-list .apps-list-inner {
-      margin-left: 20px;
-      margin-top: 15px;
+    .software-process .duration {
+      padding-right: 0;
+      text-align: center; }
+    .software-process .software-process-inner {
+      margin: 15px 0 0 20px;
       display: block; }
-      .apps-list .apps-list-inner div {
+      .software-process .software-process-inner div {
         margin-left: 0px;
         margin-bottom: 5px; }
-        .apps-list .apps-list-inner div h6 {
+        .software-process .software-process-inner div .h5 {
           font-size: 20px;
-          line-height: 26px;
           text-align: left;
-          padding-top: 9px; }
-        .apps-list .apps-list-inner div span {
+          padding-top: 7px; }
+        .software-process .software-process-inner div span.subtitle-1 {
+          padding-top: 10px;
+          padding-bottom: 5px;
           font-size: 14px;
           line-height: 18px;
-          text-align: left;
-          display: block;
-          padding-top: 10px;
-          padding-bottom: 7px; }
-      .apps-list .apps-list-inner div:first-child {
+          display: block; }
+      .software-process .software-process-inner div:first-child {
         margin-left: 0; }
-      .apps-list .apps-list-inner div:last-child {
+      .software-process .software-process-inner div:last-child {
         margin-right: 0px; }
-      .apps-list .apps-list-inner .rectangle-app-design {
+      .software-process .software-process-inner .design {
         width: 75%; }
-      .apps-list .apps-list-inner .rectangle-app-dev {
+      .software-process .software-process-inner .dev {
         width: 100%; }
-      .apps-list .apps-list-inner .rectangle-app-qa {
+      .software-process .software-process-inner .qa {
         width: 50%; }
-      .apps-list .apps-list-inner .rectangle-app-deploy {
+      .software-process .software-process-inner .deploy {
         width: 37%; }
-    .apps-list .apps-bottom {
-      margin-top: 20px; }
-      .apps-list .apps-bottom .estimated-price {
-        font-size: 12px;
-        font-weight: 700;
-        letter-spacing: 1.3px;
-        line-height: 18px;
+    .software-process .software-process-bottom {
+      display: block;
+      text-align: center; }
+      .software-process .software-process-bottom .estimated-price {
         display: block; }
-      .apps-list .apps-bottom .price {
-        font-size: 34px;
-        font-weight: 500;
-        line-height: 38px; }
-      .apps-list .apps-bottom .ic {
-        margin-left: 2px;
-        margin-top: -15px; }
-      .apps-list .apps-bottom .btn-start {
-        margin-left: 40px;
-        border-radius: 35px;
-        height: 42px;
-        font-family: Roboto;
-        font-size: 15px;
-        font-weight: 500;
-        letter-spacing: 1px;
-        line-height: 18px;
+      .software-process .software-process-bottom .price {
+        margin-top: -10px; }
+      .software-process .software-process-bottom .btn-start {
         margin-left: -7px;
-        margin-top: 30px; } }
+        margin-top: 30px;
+        display: inline-block; }
+  .solution-info {
+    margin: -80px 0 0 0; }
+    .solution-info .title {
+      font-size: 21px;
+      font-weight: 600;
+      letter-spacing: 0.1px;
+      line-height: 23px; }
+  .solution-details {
+    margin-left: 0; }
+    .solution-details .title {
+      font-size: 31px;
+      letter-spacing: 0.2px; }
+    .solution-details .solution-right .message .message-text {
+      font-size: 25px; }
+    .solution-details .solution-right .message .role {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px; }
+    .solution-details .solution-right .message .case-study {
+      font-size: 13px;
+      letter-spacing: 0.8px;
+      line-height: 16px; }
+  .ready-to-build {
+    text-align: center; }
+    .ready-to-build h3 {
+      font-size: 31px;
+      font-weight: 500;
+      letter-spacing: 0.2px; }
+    .ready-to-build .get-started {
+      margin-top: 15px; }
+  hr.hr-wave-lg {
+    background-size: 50%; }
+  .hr-app-wave-sm {
+    background-size: 40%; } }
+
+b {
+  font-weight: bold; }
+
+.clearfix {
+  clear: both; }
+
+.landing-top-wrapper .section {
+  padding: 0px 0; }
+
+.landing-top-wrapper .image {
+  margin-top: -130px;
+  width: 100%;
+  height: 484px; }
+
+.landing-top-wrapper .imagegraySection {
+  float: left; }
+
+.landing-top-wrapper .imageSection {
+  width: 63%;
+  float: right;
+  margin-left: 50px; }
+
+.landing-top-wrapper .imageGray {
+  margin-top: 30px;
+  height: 100px; }
+
+.landing-top-wrapper .contentSection {
+  margin-left: 40px;
+  width: 23%;
+  float: left;
+  margin-top: 5%;
+  margin-bottom: 8%; }
+
+.landing-top-wrapper .solutions {
+  color: #7f7f7f;
+  font-family: BarlowCondensed; }
+
+.landing-top-wrapper .you-have-a-vision-u {
+  color: #2c95d7;
+  font-family: BarlowCondensed; }
+
+.landing-top-wrapper .logoSection {
+  width: 80%;
+  margin: 0px auto;
+  line-height: 80px;
+  height: 70px; }
+  .landing-top-wrapper .logoSection .logoDivIcon {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 40px; }
+  .landing-top-wrapper .logoSection .logoDivFER {
+    width: 229px;
+    height: 30px;
+    float: left;
+    margin-right: 40px; }
+  .landing-top-wrapper .logoSection .logoDivIBM {
+    width: 120px;
+    height: 60px;
+    float: left;
+    margin-right: 35px; }
+    .landing-top-wrapper .logoSection .logoDivIBM .img {
+      margin-top: 10px; }
+  .landing-top-wrapper .logoSection .logoDivNASA {
+    width: 71px;
+    height: 60px;
+    float: left;
+    margin-right: 35px; }
+    .landing-top-wrapper .logoSection .logoDivNASA .img {
+      margin-top: 5px; }
+  .landing-top-wrapper .logoSection .logoDivCOM {
+    width: 171px;
+    height: 60px;
+    float: left;
+    margin-right: 35px; }
+  .landing-top-wrapper .logoSection .logoDivZurich {
+    width: 234px;
+    height: 60px;
+    float: left; }
+    .landing-top-wrapper .logoSection .logoDivZurich .img {
+      margin-top: 10px; }
+
+.landing-top-wrapper .logobg {
+  position: absolute;
+  top: 0px;
+  right: 0px; }
+
+.landing-top-wrapper .logoContent {
+  width: 45%;
+  margin: 0px auto 140px;
+  margin-top: 5%;
+  text-align: center; }
+
+.landing-content-wrapper .whatWeDo {
+  width: 100%;
+  height: 1250px;
+  color: #fff;
+  text-align: center;
+  margin-top: -10px;
+  background-image: linear-gradient(0deg, #8b41b0 0%, #226169 100%); }
+  .landing-content-wrapper .whatWeDo .content {
+    width: 45%;
+    margin: 0 auto;
+    padding-top: 40px; }
+  .landing-content-wrapper .whatWeDo .rectangle-copy {
+    background-color: #fff;
+    width: 850px;
+    height: 2px;
+    margin: 0 auto; }
+  .landing-content-wrapper .whatWeDo .whatWeDoTable {
+    width: 850px;
+    margin: 0 auto;
+    text-align: left; }
+    .landing-content-wrapper .whatWeDo .whatWeDoTable .appsDiv {
+      width: 200px;
+      float: left;
+      padding: 50px 0px; }
+    .landing-content-wrapper .whatWeDo .whatWeDoTable .appsDivContent {
+      width: 300px;
+      font-size: 12px;
+      float: left;
+      padding: 30px 0px; }
+      .landing-content-wrapper .whatWeDo .whatWeDoTable .appsDivContent p {
+        line-height: 1.7; }
+    .landing-content-wrapper .whatWeDo .whatWeDoTable .appsDivAmount {
+      width: 150px;
+      float: left;
+      margin-left: 50px;
+      padding: 20px 0px; }
+      .landing-content-wrapper .whatWeDo .whatWeDoTable .appsDivAmount p {
+        font-size: 10px; }
+    .landing-content-wrapper .whatWeDo .whatWeDoTable .appsDivButton {
+      width: 150px;
+      float: left;
+      text-align: right;
+      padding: 50px 0px; }
+      .landing-content-wrapper .whatWeDo .whatWeDoTable .appsDivButton .a {
+        width: 118px;
+        height: 20px;
+        line-height: 16px;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 0.8px; }
+
+.landing-content-wrapper .imagewhiteDesign {
+  width: 100%;
+  height: 80px;
+  margin-top: 190px; }
+
+.landing-content-wrapper .firstColumn {
+  width: 40%;
+  float: left;
+  margin-left: 8%; }
+  .landing-content-wrapper .firstColumn p {
+    margin-left: 35px;
+    font-size: 22px; }
+
+.landing-content-wrapper .margin_20 {
+  margin: 30px 0px; }
+
+.landing-content-wrapper .headwhyTop {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 50px; }
+
+.landing-content-wrapper .oval {
+  background-color: #5ce35c;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  float: left; }
+
+.landing-content-wrapper .whyTopContent {
+  width: 100%;
+  height: 700px; }
+
+.landing-content-wrapper .whytopImage {
+  width: 40%;
+  float: left;
+  position: absolute;
+  top: -240px;
+  right: 65px; }
+
+.landing-content-wrapper .whytopImage1 {
+  width: 40%;
+  float: left;
+  position: absolute;
+  top: 270px;
+  right: -70px; }
+
+.landing-content-wrapper .highDiv {
+  position: absolute;
+  top: 95px;
+  left: 75px;
+  color: #8b41b0;
+  font-size: 20px; }
+
+.landing-content-wrapper .bgwhiteDesign {
+  width: 100%;
+  height: 80px;
+  margin-top: 85px; }
+
+.landing-content-wrapper .bgGray {
+  background: #f4f4f4;
+  width: 100%;
+  height: 1000px; }
+  .landing-content-wrapper .bgGray .topCoderDiv {
+    width: 50%;
+    margin: 0px auto 40px;
+    text-align: center; }
+  .landing-content-wrapper .bgGray .maskDiv {
+    width: 92%;
+    margin: 0px auto; }
+  .landing-content-wrapper .bgGray .mask {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 400px;
+    height: 450px;
+    float: left; }
+  .landing-content-wrapper .bgGray .margin {
+    margin: 0px 10px; }
+  .landing-content-wrapper .bgGray .maskContent {
+    margin-left: 45px;
+    margin-top: 20px; }
+  .landing-content-wrapper .bgGray .ski-resort-schedulin {
+    color: #2a2a2a;
+    font-family: Barlow;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    line-height: 22px;
+    width: 333px;
+    text-align: left;
+    margin-bottom: 10px; }
+  .landing-content-wrapper .bgGray .mid-market-sports {
+    color: #2a2a2a;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    width: 333px;
+    text-align: left;
+    margin-bottom: 10px; }
+  .landing-content-wrapper .bgGray .months {
+    color: #2a2a2a;
+    font-family: Barlow;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    line-height: 26px;
+    text-align: left; }
+  .landing-content-wrapper .bgGray .product-designDiv {
+    margin: 10px 0px; }
+    .landing-content-wrapper .bgGray .product-designDiv p {
+      margin-left: 35px; }
+  .landing-content-wrapper .bgGray .product-design {
+    width: 24px;
+    height: 24px;
+    float: left; }
+  .landing-content-wrapper .bgGray .marginLeft30 {
+    margin-left: 30px; }
+  .landing-content-wrapper .bgGray .lookingDiv {
+    width: 30%;
+    margin: 0px auto;
+    text-align: center; }
+    .landing-content-wrapper .bgGray .lookingDiv p {
+      font-size: 24px; }
+  .landing-content-wrapper .bgGray .background {
+    background-color: #06d6a0;
+    border-radius: 35px;
+    width: 306px;
+    height: 42px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 35px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px; }
+
+hr.hr-wave-lg {
+  background-image: url("../img/landing/groupwave.png");
+  border: 0px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 100px 0px; }
+
+@media (max-width: 768px) {
+  .landing-top-wrapper .section {
+    padding: 0px 0; }
+  .landing-top-wrapper .image {
+    margin-top: -40px;
+    height: 300px;
+    margin-left: 75px; }
+  .landing-top-wrapper .imagegraySection {
+    float: left; }
+  .landing-top-wrapper .imageSection {
+    width: 90%; }
+  .landing-top-wrapper .imageGray {
+    margin-top: 30px;
+    height: 100px; }
+  .landing-top-wrapper .contentSection {
+    width: 62%;
+    margin-left: 15px; }
+  .landing-top-wrapper .solutions {
+    font-size: 25px; }
+  .landing-top-wrapper .you-have-a-vision-u h1 {
+    line-height: 45px;
+    font-size: 45px; }
+  .landing-top-wrapper .logoSection {
+    width: 90%;
+    margin: 0px auto;
+    line-height: 80px;
+    height: 70px; }
+    .landing-top-wrapper .logoSection .logoDivIcon {
+      width: 60px;
+      height: 60px;
+      float: left;
+      margin-right: 40px; }
+      .landing-top-wrapper .logoSection .logoDivIcon .img {
+        width: 40px; }
+    .landing-top-wrapper .logoSection .logoDivFER {
+      width: 150px;
+      height: 30px;
+      float: left;
+      margin-right: 25px;
+      margin-top: -10px; }
+      .landing-top-wrapper .logoSection .logoDivFER .img {
+        width: 140px; }
+    .landing-top-wrapper .logoSection .logoDivIBM {
+      width: 75px;
+      height: 60px;
+      float: left;
+      margin-right: 0px;
+      margin-top: -5px; }
+      .landing-top-wrapper .logoSection .logoDivIBM .img {
+        margin-top: 0px;
+        width: 80px; }
+    .landing-top-wrapper .logoSection .logoDivNASA {
+      width: 50px;
+      height: 60px;
+      float: left;
+      margin-right: 60px; }
+      .landing-top-wrapper .logoSection .logoDivNASA .img {
+        margin-top: 15px;
+        width: 50px; }
+    .landing-top-wrapper .logoSection .logoDivCOM {
+      width: 115px;
+      height: 60px;
+      float: left;
+      margin-right: 25px; }
+      .landing-top-wrapper .logoSection .logoDivCOM .img {
+        width: 110px; }
+    .landing-top-wrapper .logoSection .logoDivZurich {
+      width: 120px;
+      height: 60px;
+      float: left; }
+      .landing-top-wrapper .logoSection .logoDivZurich .img {
+        width: 115px; }
+  .landing-top-wrapper .logobg {
+    top: -250px; }
+  .landing-top-wrapper .logoContent {
+    width: 94%;
+    margin: 5% auto 70px;
+    text-align: center; }
+  .landing-content-wrapper .whatWeDo {
+    width: 100%;
+    height: 1900px;
+    color: #fff;
+    text-align: center;
+    margin-top: -10px;
+    background-image: linear-gradient(0deg, #8b41b0 0%, #226169 100%); }
+    .landing-content-wrapper .whatWeDo .content {
+      width: 94%;
+      margin: 0px auto;
+      padding-top: 40px; }
+    .landing-content-wrapper .whatWeDo .rectangle-copy {
+      background-color: #fff;
+      width: 90%;
+      height: 2px;
+      margin: 0px auto; }
+    .landing-content-wrapper .whatWeDo .whatWeDoTable {
+      width: 90%;
+      margin: 0px auto;
+      text-align: center; }
+      .landing-content-wrapper .whatWeDo .whatWeDoTable .appsDiv {
+        width: 100%;
+        float: left;
+        padding: 35px 0px 0px 0px; }
+      .landing-content-wrapper .whatWeDo .whatWeDoTable .appsDivContent {
+        width: 100%;
+        font-size: 12px;
+        float: left;
+        padding: 15px 0px; }
+        .landing-content-wrapper .whatWeDo .whatWeDoTable .appsDivContent p {
+          line-height: 1.7; }
+      .landing-content-wrapper .whatWeDo .whatWeDoTable .appsDivAmount {
+        width: 90%;
+        float: left;
+        margin-left: 12%;
+        padding: 0px 0px;
+        text-transform: uppercase; }
+        .landing-content-wrapper .whatWeDo .whatWeDoTable .appsDivAmount p {
+          font-size: 10px; }
+        .landing-content-wrapper .whatWeDo .whatWeDoTable .appsDivAmount .mobileAmount {
+          width: 40%;
+          float: left; }
+      .landing-content-wrapper .whatWeDo .whatWeDoTable .appsDivButton {
+        width: 100%;
+        float: left;
+        text-align: center;
+        padding: 20px 0px; }
+        .landing-content-wrapper .whatWeDo .whatWeDoTable .appsDivButton .button {
+          background-color: #fff;
+          border-radius: 35px;
+          width: 118px;
+          height: 33px;
+          border: none; }
+  .landing-content-wrapper .widthContent {
+    width: 100%;
+    margin-left: 0px; }
+  .landing-content-wrapper .imagewhiteDesign {
+    width: 100%;
+    height: 80px;
+    margin-top: 190px; }
+  .landing-content-wrapper .firstColumn {
+    width: 96%;
+    float: left;
+    margin-left: 0%; }
+    .landing-content-wrapper .firstColumn p {
+      margin-left: 35px;
+      font-size: 18px; }
+  .landing-content-wrapper .margin_20 {
+    margin: 15px 0px; }
+  .landing-content-wrapper .headwhyTop {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 0.25px; }
+  .landing-content-wrapper .oval {
+    background-color: #5ce35c;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    float: left; }
+  .landing-content-wrapper .whyTopContent {
+    width: 100%;
+    height: 950px; }
+    .landing-content-wrapper .whyTopContent .whyTopCoderMobile {
+      margin-top: 75%; }
+  .landing-content-wrapper .whytopImage {
+    width: 100%;
+    float: left;
+    position: absolute;
+    top: -215px;
+    right: 0px; }
+    .landing-content-wrapper .whytopImage .img {
+      width: 100%; }
+  .landing-content-wrapper .whytopImage1 {
+    width: 100%;
+    float: left;
+    position: absolute;
+    top: 83px;
+    right: -70px; }
+    .landing-content-wrapper .whytopImage1 .img {
+      width: 60%; }
+  .landing-content-wrapper .highDiv {
+    position: absolute;
+    top: 40px;
+    left: 25px;
+    color: #8b41b0;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Barlow;
+    letter-spacing: 0.25px; }
+  .landing-content-wrapper .bgwhiteDesign {
+    width: 100%;
+    height: 80px;
+    margin-top: 47px; }
+    .landing-content-wrapper .bgwhiteDesign .img {
+      width: 100%;
+      height: 78px; }
+  .landing-content-wrapper .bgGray {
+    background: #f4f4f4;
+    width: 100%;
+    height: 2000px; }
+    .landing-content-wrapper .bgGray .topCoderDiv {
+      width: 96%;
+      margin: 0px auto 40px;
+      text-align: center; }
+    .landing-content-wrapper .bgGray .maskDiv {
+      width: 94%;
+      margin: 0px auto; }
+    .landing-content-wrapper .bgGray .mask {
+      background-color: #fff;
+      border-radius: 10px;
+      width: 390px;
+      height: 450px;
+      float: left;
+      margin-bottom: 10px; }
+    .landing-content-wrapper .bgGray .margin {
+      margin: 0px 0px; }
+    .landing-content-wrapper .bgGray .maskContent {
+      margin-left: 20px;
+      margin-top: 20px; }
+    .landing-content-wrapper .bgGray .ski-resort-schedulin {
+      color: #2a2a2a;
+      font-family: Barlow;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      line-height: 22px;
+      width: 333px;
+      text-align: left;
+      margin-bottom: 10px; }
+    .landing-content-wrapper .bgGray .mid-market-sports {
+      color: #2a2a2a;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+      width: 333px;
+      text-align: left;
+      margin-bottom: 10px; }
+    .landing-content-wrapper .bgGray .months {
+      color: #2a2a2a;
+      font-family: Barlow;
+      font-size: 24px;
+      font-weight: 400;
+      letter-spacing: 0.2px;
+      line-height: 26px;
+      text-align: left; }
+    .landing-content-wrapper .bgGray .product-designDiv {
+      margin: 10px 0px; }
+      .landing-content-wrapper .bgGray .product-designDiv p {
+        margin-left: 35px; }
+    .landing-content-wrapper .bgGray .product-design {
+      width: 24px;
+      height: 24px;
+      float: left; }
+    .landing-content-wrapper .bgGray .marginLeft30 {
+      margin-left: 30px; }
+    .landing-content-wrapper .bgGray .lookingDiv {
+      width: 96%;
+      margin: 0px auto;
+      text-align: center; }
+      .landing-content-wrapper .bgGray .lookingDiv p {
+        font-size: 24px;
+        font-weight: 00; }
+    .landing-content-wrapper .bgGray .background {
+      background-color: #06d6a0;
+      border-radius: 35px;
+      width: 306px;
+      height: 42px;
+      border: none;
+      cursor: pointer;
+      color: #fff;
+      margin-top: 35px;
+      font-family: Roboto;
+      font-weight: 500;
+      font-size: 15px;
+      letter-spacing: 1px; } }

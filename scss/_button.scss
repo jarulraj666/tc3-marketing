@@ -28,8 +28,12 @@
 }
 
 .btn-success {
-  background: $tc-turquoise-light1;
+  background: $tc-turquoise;
   color: $tc-white;
+  &:hover {
+    background: $tc-blue-dark1;
+    color: $tc-gray5;
+  }
 }
 
 .btn-primary-white {

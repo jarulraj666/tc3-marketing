@@ -65,8 +65,29 @@ $small-neat-grid: (
   }
 }
 
-.gray-theme-app {
+.gray-theme-solution {
   background-image: linear-gradient(0deg, $tc-white 0%, $tc-gray6 100%);
+  &:before {
+    background-image: url("../img/curve-4.png");
+    background-size: cover;
+    display: block;
+    content: "";
+    height: 90px;
+    background-color: $tc-white;
+  }
+
+  .section {
+    padding: 60px 0;
+
+    .heading {
+      color: $tc-teal;
+      letter-spacing: 0.3px;
+    }
+  }
+}
+
+.gray-theme-build {
+  background: $tc-gray6;
   &:before {
     background-image: url("../img/curve-4.png");
     background-size: cover;

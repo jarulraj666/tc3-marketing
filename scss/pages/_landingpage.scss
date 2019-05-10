@@ -1,0 +1,706 @@
+// Landing Page
+
+@import "../variables";
+
+b {
+  font-weight: bold;
+}
+.clearfix {
+  clear: both;
+}
+.landing-top-wrapper {
+  // padding-left: 108px;
+
+  .section {
+    padding: 0px 0;
+  }
+
+  .image {
+    //background-image: url("../img/landing/heroimage.png");
+    margin-top: -130px;
+    width: 100%;
+    height: 484px;
+  }
+  .imagegraySection {
+    float: left;
+  }
+  .imageSection {
+    width: 63%;
+    float: right;
+    margin-left: 50px;
+  }
+  .imageGray {
+    margin-top: 30px;
+    height: 100px;
+  }
+  .contentSection {
+    margin-left: 40px;
+    width: 23%;
+    float: left;
+    margin-top: 5%;
+    margin-bottom: 8%;
+  }
+  .solutions {
+    color: $tc-gray2;
+    font-family: BarlowCondensed;
+  }
+  .you-have-a-vision-u {
+    color: $tc-blue;
+    font-family: BarlowCondensed;
+  }
+  .logoSection {
+    width: 80%;
+    margin: 0px auto;
+    line-height: 80px;
+    height: 70px;
+
+    .logoDivIcon {
+      width: 60px;
+      height: 60px;
+      float: left;
+      margin-right: 40px;
+    }
+    .logoDivFER {
+      width: 229px;
+      height: 30px;
+      float: left;
+      margin-right: 40px;
+    }
+    .logoDivIBM {
+      width: 120px;
+      height: 60px;
+      float: left;
+      margin-right: 35px;
+      .img {
+        margin-top: 10px;
+      }
+    }
+    .logoDivNASA {
+      width: 71px;
+      height: 60px;
+      float: left;
+      margin-right: 35px;
+      .img {
+        margin-top: 5px;
+      }
+    }
+    .logoDivCOM {
+      width: 171px;
+      height: 60px;
+      float: left;
+      margin-right: 35px;
+    }
+    .logoDivZurich {
+      width: 234px;
+      height: 60px;
+      float: left;
+      .img {
+        margin-top: 10px;
+      }
+    }
+  }
+  .logobg {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  .logoContent {
+    width: 45%;
+    margin: 0px auto 140px;
+    margin-top: 5%;
+    text-align: center;
+  }
+}
+
+.landing-content-wrapper {
+  .whatWeDo {
+    // background: $tc-blue;
+    width: 100%;
+    height: 1250px;
+    color: $tc-white;
+    text-align: center;
+    margin-top: -10px;
+    background-image: linear-gradient(
+      0deg,
+      $tc-blue-dark3 0%,
+      $tc-teal-dark3 100%
+    );
+    .content {
+      width: 45%;
+      margin: 0 auto;
+      padding-top: 40px;
+    }
+    .rectangle-copy {
+      background-color: $tc-white;
+      width: 850px;
+      height: 2px;
+      margin: 0 auto;
+    }
+    .whatWeDoTable {
+      width: 850px;
+      margin: 0 auto;
+      text-align: left;
+      .appsDiv {
+        width: 200px;
+        float: left;
+        padding: 50px 0px;
+      }
+      .appsDivContent {
+        width: 300px;
+        font-size: 12px;
+        float: left;
+        padding: 30px 0px;
+        p {
+          line-height: 1.7;
+        }
+      }
+      .appsDivAmount {
+        width: 150px;
+        float: left;
+        margin-left: 50px;
+        padding: 20px 0px;
+        p {
+          font-size: 10px;
+        }
+      }
+      .appsDivButton {
+        width: 150px;
+        float: left;
+        text-align: right;
+        padding: 50px 0px;
+        .a {
+          width: 118px;
+          height: 20px;
+          line-height: 16px;
+          font-size: 13px;
+          font-weight: 500;
+          letter-spacing: 0.8px;
+        }
+      }
+    }
+  }
+  .imagewhiteDesign {
+    width: 100%;
+    height: 80px;
+    margin-top: 190px;
+  }
+  .firstColumn {
+    width: 40%;
+    float: left;
+    margin-left: 8%;
+    p {
+      margin-left: 35px;
+      font-size: 22px;
+    }
+  }
+  .margin_20 {
+    margin: 30px 0px;
+  }
+  .headwhyTop {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+  .oval {
+    background-color: $tc-green;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    float: left;
+  }
+  .whyTopContent {
+    width: 100%;
+    height: 700px;
+  }
+  .whytopImage {
+    width: 40%;
+    float: left;
+    position: absolute;
+    top: -240px;
+    right: 65px;
+  }
+  .whytopImage1 {
+    width: 40%;
+    float: left;
+    position: absolute;
+    top: 270px;
+    right: -70px;
+  }
+  .highDiv {
+    position: absolute;
+    top: 95px;
+    left: 75px;
+    color: $tc-blue-dark3;
+    font-size: 20px;
+  }
+
+  .bgwhiteDesign {
+    width: 100%;
+    height: 80px;
+    margin-top: 85px;
+  }
+  .bgGray {
+    background: $tc-gray6;
+    width: 100%;
+    height: 1000px;
+    .topCoderDiv {
+      width: 50%;
+      margin: 0px auto 40px;
+      text-align: center;
+    }
+    .maskDiv {
+      width: 92%;
+      margin: 0px auto;
+    }
+    .mask {
+      background-color: $tc-white;
+      border-radius: 10px;
+      width: 400px;
+      height: 450px;
+      float: left;
+    }
+    .margin {
+      margin: 0px 10px;
+    }
+    .maskContent {
+      margin-left: 45px;
+      margin-top: 20px;
+    }
+    .ski-resort-schedulin {
+      color: $tc-dark;
+      font-family: Barlow;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      line-height: 22px;
+      width: 333px;
+      text-align: left;
+      margin-bottom: 10px;
+    }
+    .mid-market-sports {
+      color: $tc-dark;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+      width: 333px;
+      text-align: left;
+      margin-bottom: 10px;
+    }
+    .months {
+      color: $tc-dark;
+      font-family: Barlow;
+      font-size: 24px;
+      font-weight: 400;
+      letter-spacing: 0.2px;
+      line-height: 26px;
+      text-align: left;
+    }
+    .product-designDiv {
+      margin: 10px 0px;
+      p {
+        margin-left: 35px;
+      }
+    }
+    .product-design {
+      width: 24px;
+      height: 24px;
+      float: left;
+    }
+    .marginLeft30 {
+      margin-left: 30px;
+    }
+    .lookingDiv {
+      width: 30%;
+      margin: 0px auto;
+      text-align: center;
+      p {
+        font-size: 24px;
+      }
+    }
+    .background {
+      background-color: $tc-turquoise;
+      border-radius: 35px;
+      width: 306px;
+      height: 42px;
+      border: none;
+      cursor: pointer;
+      color: $tc-white;
+      margin-top: 35px;
+      font-family: Roboto;
+      font-weight: 500;
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+hr {
+  &.hr-wave-lg {
+    background-image: url("../img/landing/groupwave.png");
+    border: 0px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 100px 0px;
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .landing-top-wrapper {
+    .section {
+      padding: 0px 0;
+    }
+    .image {
+      margin-top: -40px;
+      height: 300px;
+      margin-left: 75px;
+    }
+    .imagegraySection {
+      float: left;
+    }
+    .imageSection {
+      width: 90%;
+    }
+    .imageGray {
+      margin-top: 30px;
+      height: 100px;
+    }
+    .contentSection {
+      width: 62%;
+      margin-left: 15px;
+    }
+    .solutions {
+      font-size: 25px;
+    }
+    .you-have-a-vision-u {
+      h1 {
+        line-height: 45px;
+        font-size: 45px;
+      }
+    }
+    .logoSection {
+      width: 90%;
+      margin: 0px auto;
+      line-height: 80px;
+      height: 70px;
+
+      .logoDivIcon {
+        width: 60px;
+        height: 60px;
+        float: left;
+        margin-right: 40px;
+        .img {
+          width: 40px;
+        }
+      }
+      .logoDivFER {
+        width: 150px;
+        height: 30px;
+        float: left;
+        margin-right: 25px;
+        margin-top: -10px;
+        .img {
+          width: 140px;
+        }
+      }
+      .logoDivIBM {
+        width: 75px;
+        height: 60px;
+        float: left;
+        margin-right: 0px;
+        margin-top: -5px;
+        .img {
+          margin-top: 0px;
+          width: 80px;
+        }
+      }
+      .logoDivNASA {
+        width: 50px;
+        height: 60px;
+        float: left;
+        margin-right: 60px;
+        .img {
+          margin-top: 15px;
+          width: 50px;
+        }
+      }
+      .logoDivCOM {
+        width: 115px;
+        height: 60px;
+        float: left;
+        margin-right: 25px;
+        .img {
+          width: 110px;
+        }
+      }
+      .logoDivZurich {
+        width: 120px;
+        height: 60px;
+        float: left;
+        .img {
+          width: 115px;
+        }
+      }
+    }
+    .logobg {
+      top: -250px;
+    }
+    .logoContent {
+      width: 94%;
+      margin: 5% auto 70px;
+      text-align: center;
+    }
+  }
+
+  .landing-content-wrapper {
+    .whatWeDo {
+      // background: $tc-blue;
+      width: 100%;
+      height: 1900px;
+      color: $tc-white;
+      text-align: center;
+      margin-top: -10px;
+      background-image: linear-gradient(
+        0deg,
+        $tc-blue-dark3 0%,
+        $tc-teal-dark3 100%
+      );
+      .content {
+        width: 94%;
+        margin: 0px auto;
+        padding-top: 40px;
+      }
+      .rectangle-copy {
+        background-color: $tc-white;
+        width: 90%;
+        height: 2px;
+        margin: 0px auto;
+      }
+      .whatWeDoTable {
+        width: 90%;
+        margin: 0px auto;
+        text-align: center;
+        .appsDiv {
+          width: 100%;
+          float: left;
+          padding: 35px 0px 0px 0px;
+        }
+        .appsDivContent {
+          width: 100%;
+          font-size: 12px;
+          float: left;
+          padding: 15px 0px;
+          p {
+            line-height: 1.7;
+          }
+        }
+        .appsDivAmount {
+          width: 90%;
+          float: left;
+          margin-left: 12%;
+          padding: 0px 0px;
+          text-transform: uppercase;
+          p {
+            font-size: 10px;
+          }
+          .mobileAmount {
+            width: 40%;
+            float: left;
+          }
+        }
+        .appsDivButton {
+          width: 100%;
+          float: left;
+          text-align: center;
+          padding: 20px 0px;
+          .button {
+            background-color: $tc-white;
+            border-radius: 35px;
+            width: 118px;
+            height: 33px;
+            border: none;
+          }
+        }
+      }
+    }
+    .widthContent {
+      width: 100%;
+      margin-left: 0px;
+    }
+    .imagewhiteDesign {
+      width: 100%;
+      height: 80px;
+      margin-top: 190px;
+    }
+    .firstColumn {
+      width: 96%;
+      float: left;
+      margin-left: 0%;
+      p {
+        margin-left: 35px;
+        font-size: 18px;
+      }
+    }
+    .margin_20 {
+      margin: 15px 0px;
+    }
+    .headwhyTop {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 36px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+    }
+    .oval {
+      background-color: $tc-green;
+      border-radius: 100%;
+      width: 20px;
+      height: 20px;
+      float: left;
+    }
+    .whyTopContent {
+      width: 100%;
+      height: 950px;
+      .whyTopCoderMobile {
+        margin-top: 75%;
+      }
+    }
+    .whytopImage {
+      width: 100%;
+      float: left;
+      position: absolute;
+      top: -215px;
+      right: 0px;
+      .img {
+        width: 100%;
+      }
+    }
+    .whytopImage1 {
+      width: 100%;
+      float: left;
+      position: absolute;
+      top: 83px;
+      right: -70px;
+      .img {
+        width: 60%;
+      }
+    }
+    .highDiv {
+      position: absolute;
+      top: 40px;
+      left: 25px;
+      color: $tc-blue-dark3;
+      font-size: 14px;
+      font-weight: 600;
+      font-family: Barlow;
+      letter-spacing: 0.25px;
+    }
+
+    .bgwhiteDesign {
+      width: 100%;
+      height: 80px;
+      margin-top: 47px;
+      .img {
+        width: 100%;
+        height: 78px;
+      }
+    }
+    .bgGray {
+      background: $tc-gray6;
+      width: 100%;
+      height: 2000px;
+      .topCoderDiv {
+        width: 96%;
+        margin: 0px auto 40px;
+        text-align: center;
+      }
+      .maskDiv {
+        width: 94%;
+        margin: 0px auto;
+      }
+      .mask {
+        background-color: $tc-white;
+        border-radius: 10px;
+        width: 390px;
+        height: 450px;
+        float: left;
+        margin-bottom: 10px;
+      }
+      .margin {
+        margin: 0px 0px;
+      }
+      .maskContent {
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+      .ski-resort-schedulin {
+        color: $tc-dark;
+        font-family: Barlow;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 0.3px;
+        line-height: 22px;
+        width: 333px;
+        text-align: left;
+        margin-bottom: 10px;
+      }
+      .mid-market-sports {
+        color: $tc-dark;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        width: 333px;
+        text-align: left;
+        margin-bottom: 10px;
+      }
+      .months {
+        color: $tc-dark;
+        font-family: Barlow;
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: 0.2px;
+        line-height: 26px;
+        text-align: left;
+      }
+      .product-designDiv {
+        margin: 10px 0px;
+        p {
+          margin-left: 35px;
+        }
+      }
+      .product-design {
+        width: 24px;
+        height: 24px;
+        float: left;
+      }
+      .marginLeft30 {
+        margin-left: 30px;
+      }
+      .lookingDiv {
+        width: 96%;
+        margin: 0px auto;
+        text-align: center;
+        p {
+          font-size: 24px;
+          font-weight: 00;
+        }
+      }
+      .background {
+        background-color: $tc-turquoise;
+        border-radius: 35px;
+        width: 306px;
+        height: 42px;
+        border: none;
+        cursor: pointer;
+        color: $tc-white;
+        margin-top: 35px;
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 15px;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}

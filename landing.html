@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>Topcoder 3.0</title>
+
+  <link rel="stylesheet" href="./css/aos.css">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- D3 library and flubber library to implement morph -->
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://unpkg.com/flubber@0.3.0"></script>
+  <script src="https://unpkg.com/animejs@2.2.0/anime.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
+
+  <!-- AOS library for scrolling animation-->
+  <script src="js/aos.js"></script>
+
+  <!-- Tab Component -->
+  <script src="js/tab.js"></script>
+
+  <!-- TC script -->
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <div class="container dark-white">
+    <div class="landing-top-wrapper">
+      <!-- Navigation, just image -->
+      <img src="./img/topnav.png" class="full hide-phone" alt="Navigation" />
+      <img src="./img/topnav-phone.png" class="full show-only-phone" alt="Navigation" />
+
+      <!-- Title and hero video block -->
+      <div class="section vertical-padding-m">
+          <div class="grid landing">
+            <div class="imagegraySection hide-phone">
+                <div class="imageGray">
+                  <img src="./img/landing/OvalCopy10.png" class="full" alt="Navigation" />
+                </div>
+            </div>
+            <div class="imageSection">
+                <div class="image">
+                  <img src="./img/landing/heroimage.png" class="full" alt="Navigation" />
+                  <!-- <i class="ic ic-l ic-play-white"></i> -->
+                </div>
+              </div>
+            <div class="contentSection">
+              <div class="solutions uppercase">
+                <h4>Solutions</h4>
+              </div>
+              <div class="you-have-a-vision-u">
+                <h1 class="uppercase title" data-aos="fade-up">
+                  YOU HAVE A VISION. USE OUR TALENT TO REALIZE IT.
+                </h1>
+              </div>
+            </div>
+            
+          </div>
+      </div>
+      <div class="clearfix"></div>
+      <!-- 2 blocks 'Ready to start a project?' and 'Have a complex project?' -->
+      <div class="section">
+        <div class="grid" style="position: relative;">
+          <div class="logoSection">
+            <div class="logoDivIcon">
+              <img class="img" src="./img/landing/5847f7ffcef1014c0b5e48a6.png" />
+            </div>
+            <div class="logoDivFER">
+              <img class="img" src="./img/landing/1280px-Ferguson_logo.svg.png" />
+            </div>
+            <div class="logoDivIBM">
+              <img class="img" src="./img/landing/ibm-logo-png-transparent-background-768x384.png"/>
+            </div>
+            <div class="clearfix show-only-phone"></div>
+            <div class="logoDivNASA">
+              <img class="img" src="./img/landing/58429400a6515b1e0ad75acc.png"/>
+            </div>
+            <div class="logoDivCOM">
+              <img class="img" src="./img/landing/5847e9c9cef1014c0b5e482b.png" />
+            </div>
+            <div class="logoDivZurich">
+              <img class="img" src="./img/landing/Zurich.png"/>
+            </div>
+          </div>
+          <div class="logobg">
+            <img src="./img/landing/OvalCopy7.png"/>
+          </div>
+        </div>
+        <div class="logoContent">
+          <p>Execute your digital work with incredible speed and incredible talent. We pair access to our 
+            industry-leading community with a simple-to-use digital platform. </p>
+            <p class="vertical-padding-m"><b>Start sooner and get done faster with Topcoder Solutions.</b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Our Talent, Your Success block -->
+  <div class="container curve-theme">
+    <div class="landing-content-wrapper">
+      <div class="grid" data-aos="fade-up" data-aos-delay="200">
+        <div class="column-small-12 widthContent">
+          <div class="block portrait">
+            <img src="./img/landing/Rectangle.png" class="full" alt="" />
+          </div>
+        </div>
+        <div class="column-small-12 widthContent">
+          <div class="whatWeDo">
+            <div class="content">
+              <h3>WHAT WE DO BEST</h3>
+              <p class="margin-top-l"style="margin-bottom:75px;">Customers like Comcast, GE, Harvard, Saxo Bank, 
+                NASA and many others use Topcoder to supplement and enhance their digital teams.</p>
+            </div>
+            <div class="rectangle-copy"></div>
+            <div class="whatWeDoTable">
+              <div class="appsDiv">
+                <h6>APPS</h6>
+              </div>
+              <div class="appsDivContent">
+                <p>We have the specialized UI designers, developers and testers you need to create 
+                  and deploy an amazing digital experience. Use our talent for just one part or 
+                  for the entire product creation.</p>
+              </div>
+              <div class="appsDivAmount uppercase">
+                <div class="mobileAmount">
+                  <p>Starting at</p>
+                  <h6>$20,000</h6>
+                </div>
+                <div class="mobileAmount">
+                  <p>In roughly</p>
+                  <h6>7 wks</h6>
+                </div>
+              </div>
+              <div class="appsDivButton">
+                <a href="apps.html" class="btn btn-primary-white">Learn More</a>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="rectangle-copy"></div>
+            <div class="whatWeDoTable">
+              <div class="appsDiv">
+                <h6>Websites</h6>
+              </div>
+              <div class="appsDivContent">
+                <p>Work with our talent to establish a modern design that looks amazing on web and 
+                  mobile and integrates all the tools and platforms you’ll need to succeed. We’ll be 
+                  with you at every step of the way.</p>
+              </div>
+              <div class="appsDivAmount">
+                  <div class="mobileAmount">
+                      <p>Starting at</p>
+                      <h6>$20,000</h6>
+                  </div>
+                  <div class="mobileAmount">
+                      <p>In roughly</p>
+                      <h6>4 wks</h6>
+                  </div>
+              </div>
+              <div class="appsDivButton">
+                <a href="websites.html" class="btn btn-primary-white">Learn More</a>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="rectangle-copy"></div>
+            <div class="whatWeDoTable">
+              <div class="appsDiv">
+                <h6>Analytics & data Science</h6>
+              </div>
+              <div class="appsDivContent">
+                <p>Tap our talent to create specialized algorithms, predictive models, computer vision 
+                  and machine learning solutions. Tell us what you want to do with your data, and our 
+                  community gets to work.</p>
+              </div>
+              <div class="appsDivAmount">
+                  <div class="mobileAmount">
+                    <p>Starting at</p>
+                    <h6>$20,000</h6>
+                  </div>
+                <div class="mobileAmount">
+                  <p>In roughly</p>
+                  <h6>7 wks</h6>
+                </div>
+              </div>
+              <div class="appsDivButton">
+                <a href="#" class="btn btn-primary-white">Learn More</a>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="rectangle-copy"></div>
+            <div class="whatWeDoTable">
+              <div class="appsDiv">
+                <h6>QA Services</h6>
+              </div>
+              <div class="appsDivContent">
+                <p>Your team, your digital product, your launch… when it’s time to execute, let us handle 
+                  the details. We have the testing experts to help you identify and fix bugs, and to do 
+                  it incredibly simply.</p>
+              </div>
+              <div class="appsDivAmount">
+                  <div class="mobileAmount">
+                    <p>Starting at</p>
+                    <h6>$20,000</h6>
+                  </div>
+                  <div class="mobileAmount">
+                    <p>In roughly</p>
+                    <h6>7 wks</h6>
+                  </div>
+              </div>
+              <div class="appsDivButton">
+                <a href="#" class="btn btn-primary-white">Learn More</a>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="rectangle-copy"></div>
+            <div class="whatWeDoTable">
+              <div class="appsDiv">
+                <h6>API Dev</h6>
+              </div>
+              <div class="appsDivContent">
+                <p>Don’t spend days trying to find some dev unicorn. Whether you have a dev backlog, 
+                  recurring development needs, or just one task you need done the right way, our talent 
+                  can help.</p>
+              </div>
+              <div class="appsDivAmount">
+                  <div class="mobileAmount">
+                    <p>Starting at</p>
+                    <h6>$20,000</h6>
+                  </div>
+                  <div class="mobileAmount">
+                    <p>In roughly</p>
+                    <h6>7 wks</h6>
+                  </div>
+              </div>
+              <div class="appsDivButton">
+                <a href="#" class="btn btn-primary-white">Learn More</a>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="rectangle-copy"></div>
+            <div class="imagewhiteDesign">
+              <img src="./img/landing/Rectangle Copy.png" />
+            </div>
+          </div>
+
+          <div class="clearfix"></div>
+          <div class="whyTopContent" data-aos="fade-up" data-aos-delay="200" style="position: relative;">
+            <div class="column-7 column-small-12 whyTopCoderMobile">
+              <h4 class="title uppercase headwhyTop">Why Topcoder?</h4>
+              <div class="firstColumn">
+                <div class="margin_20">
+                  <img class="oval" src="./img/landing/yes.png" />
+                  <p>Access to incredible talent</p>
+                </div>
+                <div class="margin_20">
+                  <img class="oval" src="./img/landing/yes.png" />
+                  <p>Guided support at every stage</p>
+                </div>
+                <div class="margin_20">
+                  <img class="oval" src="./img/landing/yes.png" />
+                  <p>A dedicated Copilot to help you execute</p>
+                </div>
+                <div class="margin_20">
+                  <img class="oval" src="./img/landing/yes.png" />
+                  <p>Personal game plans crafted for your project</p>
+                </div>
+                <div class="margin_20">
+                  <img class="oval" src="./img/landing/yes.png" />
+                  <p>Timelines presented up front</p>
+                </div>
+              </div>
+
+              <div class="firstColumn">
+                <div class="margin_20">
+                  <img class="oval" src="./img/landing/yes.png" />
+                  <p>No matchmaking</p>
+                </div>
+                <div class="margin_20">
+                  <img class="oval" src="./img/landing/yes.png" />
+                  <p>No reviewing arbitrary online ratings</p>
+                </div>
+                <div class="margin_20">
+                  <img class="oval" src="./img/landing/yes.png" />
+                  <p>No hoping you picked a quality candidate</p>
+                </div>
+                <div class="margin_20">
+                  <img class="oval" src="./img/landing/yes.png" />
+                  <p>No negotiating an hourly fee</p>
+                </div>
+                <div class="margin_20">
+                  <img class="oval" src="./img/landing/yes.png" />
+                  <p>No worrying about deadlines and delivery</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="whytopImage">
+              <img class="img" src="./img/landing/Image.png" />
+            </div>
+            <div class="whytopImage1">
+              <img class="img" src="./img/landing/Oval Copy 8.png" />
+              <p class="highDiv">HIGH QUALITY TALENT AND <br /> GUARANTEED SUCCESS</p>
+            </div>
+            <div class="clearfix"></div>
+            <div class="bgwhiteDesign">
+              <img class="img" src="./img/landing/Rectangle Copy gray.png" />
+            </div>
+          </div>
+
+          <div class="clearfix"></div>
+          <div class="bgGray" data-aos="fade-up" data-aos-delay="200">
+            <div class="topCoderDiv">
+              <p>Use Topcoder Solutions when you have a single project or piece of a project to 
+                accomplish. These are examples of projects we’ve done thousands of times over:</p>
+            </div>
+            <div class="maskDiv">
+              <div class="mask">
+                <img src="img/landing/rawpixel-703123-unsplash.png" style="width: 100%;" />
+                <div class="maskContent">
+                  <p class="ski-resort-schedulin">Ski Resort Scheduling & Booking System</p>
+                  <p class="mid-market-sports">Mid-Market Sports & Leisure</p>
+                  <p style="margin-bottom: 20px;"><span class="months">$179k</span><span class="months marginLeft30">7 months</span></p>
+                  
+                  <div class="product-designDiv">
+                    <img class="product-design" src="./img/landing/Product Design.png" />
+                    <p>Access to incredible talent</p>
+                  </div>
+                  <div class="product-designDiv">
+                    <img class="product-design" src="./img/landing/Development.png" />
+                    <p>Development</p>
+                  </div>
+                  <div class="product-designDiv">
+                    <img class="product-design" src="./img/landing/QA & Testing Copy 2.png" />
+                    <p>QA & Testing</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="mask margin">
+                <img src="img/landing/rawpixel-703123-unsplash.png" style="width: 100%;"/>
+                <div class="maskContent">
+                  <p class="ski-resort-schedulin">Fashion Retail Website Exploration</p>
+                  <p class="mid-market-sports">Fortune 500 Retail</p>
+                  <p style="margin-bottom: 20px;"><span class="months">$27k</span><span class="months marginLeft30">3 Weeks</span></p>
+                  
+                  <div class="product-designDiv">
+                    <img class="product-design" src="./img/landing/Website-Design.png" />
+                    <p>Website Design</p>
+                  </div>
+                  <div class="product-designDiv">
+                    <img class="product-design" src="./img/landing/QA & Testing Copy 2.png" />
+                    <p>QA & Testing</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="mask">
+                <img src="img/landing/rawpixel-703123-unsplash.png" style="width: 100%;"/>
+                <div class="maskContent">
+                  <p class="ski-resort-schedulin">Computer Vision Prediction Algorithm & Visualizer</p>
+                  <p class="mid-market-sports">Global 1000 Healthcare</p>
+                  <p style="margin-bottom: 20px;"><span class="months">$161k</span><span class="months marginLeft30">6 months</span></p>
+                  
+                  <div class="product-designDiv">
+                    <img class="product-design" src="./img/landing/Data Science & Analytics.png" />
+                    <p>Data Science & Analytics</p>
+                  </div>
+                  <div class="product-designDiv">
+                    <img class="product-design" src="./img/landing/Product Design.png" />
+                    <p>Product Design</p>
+                  </div>
+                  <div class="product-designDiv">
+                    <img class="product-design" src="./img/landing/Development.png" />
+                    <p>Development</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
+            <hr class="hr-wave-lg">
+            <div class="lookingDiv">
+              <p>Looking at Crowdsourcing for your enterprise?</p>
+              <button class="background">Explore enterprise programs</button>
+            </div>
+          </div>
+
+          <div class="clearfix"></div>
+          <!-- Call to action block Ready to go-->
+          <div class="container">
+            <div class="block small-call-to-action-block">
+              <div class="h6">
+                <div>Questions? See</div>
+                <div><a href="#">How it works</a> OR <a href="#">contact us</a></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Footer -->
+          <div class="container footer">
+            <div class="wrapper hide-phone">
+              <div class="block footer-logo">
+                <img src="./img/logos/tc-inverted.svg" alt="" />
+              </div>
+              <div class="block flex footer-body">
+                <div class="flex-grow footer-column">
+                  <div class="footer-header">
+                    SOLUTIONS
+                  </div>
+                  <ul>
+                    <li><a href="#">Apps</a></li>
+                    <li><a href="#">Websites</a></li>
+                    <li><a href="#">Analytics & Data Science</a></li>
+                    <li><a href="#">Digital Product Design</a></li>
+                    <li><a href="#">Testing & Quality Insurance</a></li>
+                    <li><a href="#">Development Tasks</a></li>
+                  </ul>
+                </div>
+                <div class="flex-grow footer-column">
+                  <div class="footer-header">
+                    ENTERPRISE OFFERINGS
+                  </div>
+                  <ul>
+                    <li><a href="#">Crowd-Powered Analytics</a></li>
+                    <li><a href="#">Crowd-Powered QA</a></li>
+                    <li><a href="#">Talent as a Service</a></li>
+                    <li><a href="#">Workforce Transformation</a></li>
+                  </ul>
+                </div>
+                <div class="flex-grow footer-column">
+                  <div class="footer-header">
+                    Company
+                  </div>
+                  <ul>
+                    <li><a href="#">About Topcoder</a></li>
+                    <li><a href="#">Leadership</a></li>
+                    <li><a href="#">Partners</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Jobs</a></li>
+                  </ul>
+                </div>
+                <div class="flex-grow footer-column">
+                  <div class="footer-header">
+                    &nbsp;
+                  </div>
+                  <ul>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Community</a></li>
+                  </ul>
+                </div>
+                <div class="flex-grow-2 footer-column">
+                  <div class="footer-header">
+                    CONTACT US
+                  </div>
+                  <div class="grid grid-collapse">
+                    <div class="column-6">
+                      <ul>
+                        <li><a href="#">(855) 867-1356</a></li>
+                        <li>Mon–Fri 8am–5pm EST</li>
+                        <li><a href="#">Talk to Sales</a></li>
+                      </ul>
+                    </div>
+                    <div class="column-6">
+                      <ul>
+                        <li>1234 Address</li>
+                        <li>Suite 1234</li>
+                        <li>Indianapolis, IN 12345</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="block footer-bottom flex space-arround">
+                <ul class="copyright flex-grow">
+                  <li>© 2019 TOPCODER</li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms of use</a></li>
+                </ul>
+                <ul class="social-links">
+                  <li class=""><a href="#" target="_blank"><img src="./img/icons/facebook.svg" alt="" /></a></li>
+                  <li class=""><a href="#" target="_blank"><img src="./img/icons/instagram.svg" alt="" /></a></li>
+                  <li class=""><a href="#" target="_blank"><img src="./img/icons/twitter.svg" alt="" /></a></li>
+                  <li class=""><a href="#" target="_blank"><img src="./img/icons/linkedin.svg" alt="" /></a></li>
+                  <li class=""><a href="#" target="_blank"><img src="./img/icons/youtube.svg" alt="" /></a></li>
+                </ul>
+              </div>
+            </div>
+        
+            <div class="wrapper show-only-phone">
+              <div class="block footer-logo">
+                <img src="./img/logos/tc-inverted.svg" alt="" />
+              </div>
+              <div class="block flex footer-body">
+                <div class="flex-grow footer-column">
+                  <ul>
+                    <li><a href="#">Solutions</a></li>
+                    <li><a href="#">Enterprise Offerings</a></li>
+                    <li><a href="#">Company</a></li>
+                  </ul>
+                </div>
+                <div class="flex-grow footer-column">
+                  <ul>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Resources</a></li>
+                  </ul>
+                </div>
+                <div class="flex-grow footer-column">
+                  <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="block footer-bottom">
+                <ul class="social-links">
+                    <li class=""><a href="#" target="_blank"><img src="./img/icons/facebook.svg" alt="" /></a></li>
+                    <li class=""><a href="#" target="_blank"><img src="./img/icons/instagram.svg" alt="" /></a></li>
+                    <li class=""><a href="#" target="_blank"><img src="./img/icons/twitter.svg" alt="" /></a></li>
+                    <li class=""><a href="#" target="_blank"><img src="./img/icons/linkedin.svg" alt="" /></a></li>
+                    <li class=""><a href="#" target="_blank"><img src="./img/icons/youtube.svg" alt="" /></a></li>
+                </ul>
+                <ul class="copyright flex-grow">
+                  <li>© 2019 TOPCODER</li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms of use</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Make the Gig Economy ... work block -->
+  <!-- <div class="container gray-theme" data-aos="fade-up" data-aos-delay="200">
+    <div class="section">
+      <div class="block call-to-action-block align-center">
+        <h3 class="heading">MAKE THE GIG ECONOMY WORK FOR YOUR ENTERPRISE</h3>
+        <div class="block bottom">
+          <a href="#" class="btn btn-primary">Learn about entprise programs</a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Customer success block -->
+  <!-- <div class="container teal-theme">
+    <div class="wrapper">
+      <div class="block block-vertical-margin">
+        <div class="grid">
+          <div class="column-6 column-small-12">
+            <div class="customer-block-intro block" data-aos="fade-up" data-aos-delay="200">
+              <h2 class="section-title">OUR CUSTOMERS,<br />THEIR SUCCESS</h2>
+              <div class="block bottom">
+                <a href="#" class="btn btn-primary-white">VIEW MORE SUCCESS STORIES</a>
+              </div>
+            </div>
+          </div>
+          <div class="column-6 column-small-12 small-margin-top">
+            <div class="block customer-block size-1 curve" data-aos="fade-up" data-aos-delay="400">
+              <div class="grid grid-collapse flex">
+                <div class="column-7 column-small-12">
+                  <div class="content-wrapper">
+                    <div class="image">
+                      <img src="./img/logos/ibm.png" alt="" />
+                    </div>
+                    <h6 class="heading">
+                      PROJECT NAME
+                    </h6>
+                    <div class="body">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dictum suscipit quam ut laoreet.
+                      Curabitur accumsan, mi id convallis sagittis, elit eros.
+                    </div>
+                    <div class="bottom">
+                      <a href="#" class="btn btn-link">READ MORE</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="column-5 customer-block-image" style="background-image: url('./img/ibm-customer.png')">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block block-vertical-margin">
+        <div class="grid">
+          <div class="column-8 column-small-12">
+            <div class="block customer-block size-2 curve" data-aos="fade-up" data-aos-delay="400">
+              <div class="grid grid-collapse flex">
+                <div class="column-5 col-1">
+                  <div class="content-wrapper">
+                    <div class="image">
+                      <img src="./img/logos/zurich.png" alt="" />
+                    </div>
+                    <h6 class="heading">
+                      PROJECT NAME
+                    </h6>
+                    <div class="content">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dictum suscipit quam ut laoreet.
+                      Curabitur accumsan, mi id convallis sagittis, elit eros.
+                    </div>
+                    <div class="block">
+                      <a href="#" class="btn btn-link">READ MORE</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column-7 customer-block-image"
+                  style="background-image: url('./img/eric-weber-804684-unsplash.png')">
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column-4 column-small-12 small-margin-top">
+            <div class="grid grid-collapse">
+              <div class="column-12 column-small-6">
+                <div class="block customer-block size-3 curve" data-aos="fade-up" data-aos-delay="200">
+                  <img src="./img/logos/ferguson-large.png" alt="" />
+                </div>
+              </div>
+              <div class="column-12 column-small-6 block-vertical-margin small-remove-margin-top">
+                <div class="block customer-block size-4 curve" data-aos="fade-up" data-aos-delay="200">
+                  <img src="./img/logos/comcast-large.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Call to action block Ready to go-->
+  <!-- <div class="container">
+    <div class="block small-call-to-action-block">
+      <div class="h6">
+        <div>READY TO GO?</div>
+        <div><a href="#">START A PROJECT</a> OR <a href="#">TALK TO SALES</a></div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Footer -->
+  <!-- <div class="container footer">
+    <div class="wrapper hide-phone">
+      <div class="block footer-logo">
+        <img src="./img/logos/tc-inverted.svg" alt="" />
+      </div>
+      <div class="block flex footer-body">
+        <div class="flex-grow footer-column">
+          <div class="footer-header">
+            SOLUTIONS
+          </div>
+          <ul>
+            <li><a href="#">Apps</a></li>
+            <li><a href="#">Websites</a></li>
+            <li><a href="#">Analytics & Data Science</a></li>
+            <li><a href="#">Digital Product Design</a></li>
+            <li><a href="#">Testing & Quality Insurance</a></li>
+            <li><a href="#">Development Tasks</a></li>
+          </ul>
+        </div>
+        <div class="flex-grow footer-column">
+          <div class="footer-header">
+            ENTERPRISE OFFERINGS
+          </div>
+          <ul>
+            <li><a href="#">Crowd-Powered Analytics</a></li>
+            <li><a href="#">Crowd-Powered QA</a></li>
+            <li><a href="#">Talent as a Service</a></li>
+            <li><a href="#">Workforce Transformation</a></li>
+          </ul>
+        </div>
+        <div class="flex-grow footer-column">
+          <div class="footer-header">
+            Company
+          </div>
+          <ul>
+            <li><a href="#">About Topcoder</a></li>
+            <li><a href="#">Leadership</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Jobs</a></li>
+          </ul>
+        </div>
+        <div class="flex-grow footer-column">
+          <div class="footer-header">
+            &nbsp;
+          </div>
+          <ul>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Community</a></li>
+          </ul>
+        </div>
+        <div class="flex-grow-2 footer-column">
+          <div class="footer-header">
+            CONTACT US
+          </div>
+          <div class="grid grid-collapse">
+            <div class="column-6">
+              <ul>
+                <li><a href="#">(855) 867-1356</a></li>
+                <li>Mon–Fri 8am–5pm EST</li>
+                <li><a href="#">Talk to Sales</a></li>
+              </ul>
+            </div>
+            <div class="column-6">
+              <ul>
+                <li>1234 Address</li>
+                <li>Suite 1234</li>
+                <li>Indianapolis, IN 12345</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block footer-bottom flex space-arround">
+        <ul class="copyright flex-grow">
+          <li>© 2019 TOPCODER</li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of use</a></li>
+        </ul>
+        <ul class="social-links">
+          <li class=""><a href="#" target="_blank"><img src="./img/icons/facebook.svg" alt="" /></a></li>
+          <li class=""><a href="#" target="_blank"><img src="./img/icons/instagram.svg" alt="" /></a></li>
+          <li class=""><a href="#" target="_blank"><img src="./img/icons/twitter.svg" alt="" /></a></li>
+          <li class=""><a href="#" target="_blank"><img src="./img/icons/linkedin.svg" alt="" /></a></li>
+          <li class=""><a href="#" target="_blank"><img src="./img/icons/youtube.svg" alt="" /></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wrapper show-only-phone">
+      <div class="block footer-logo">
+        <img src="./img/logos/tc-inverted.svg" alt="" />
+      </div>
+      <div class="block flex footer-body">
+        <div class="flex-grow footer-column">
+          <ul>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Enterprise Offerings</a></li>
+            <li><a href="#">Company</a></li>
+          </ul>
+        </div>
+        <div class="flex-grow footer-column">
+          <ul>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Resources</a></li>
+          </ul>
+        </div>
+        <div class="flex-grow footer-column">
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="block footer-bottom">
+        <ul class="social-links">
+            <li class=""><a href="#" target="_blank"><img src="./img/icons/facebook.svg" alt="" /></a></li>
+            <li class=""><a href="#" target="_blank"><img src="./img/icons/instagram.svg" alt="" /></a></li>
+            <li class=""><a href="#" target="_blank"><img src="./img/icons/twitter.svg" alt="" /></a></li>
+            <li class=""><a href="#" target="_blank"><img src="./img/icons/linkedin.svg" alt="" /></a></li>
+            <li class=""><a href="#" target="_blank"><img src="./img/icons/youtube.svg" alt="" /></a></li>
+        </ul>
+        <ul class="copyright flex-grow">
+          <li>© 2019 TOPCODER</li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of use</a></li>
+        </ul>
+      </div>
+    </div>
+  </div> -->
+</body>
+
+</html>
