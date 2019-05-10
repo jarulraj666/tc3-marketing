@@ -9,9 +9,6 @@
       &.apps-title {
         color: $tc-teal;
       }
-      &.websites-title {
-        color: $tc-orange;
-      }
     }
     .subtitle {
       padding: 20px 66px 0;
@@ -125,8 +122,10 @@
     padding-bottom: 42px;
   }
   .title {
-    color: $tc-teal;
     line-height: $tc-spacing-l;
+    &.apps-title {
+      color: $tc-teal;
+    }
   }
   .description {
     color: $tc-dark;
